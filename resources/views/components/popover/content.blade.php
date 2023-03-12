@@ -1,6 +1,6 @@
-<x-app-ui::prose
+<x-lui::prose
     size="sm"
     {{ $attributes->class(['text-gray-600']) }}
 >
     {{ $slot }}
-</x-app-ui::prose>
+</x-lui::prose>

@@ -35,7 +35,7 @@
 
     @if ($footer)
         <div class="p-2 -mt-2 space-y-2">
-            <x-app-ui::hr />
+            <x-lui::hr />
 
             <div class="py-1">
                 {{ $footer }}

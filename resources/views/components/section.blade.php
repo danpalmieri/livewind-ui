@@ -21,11 +21,11 @@
                     @endif
 
                     @if ($heading)
-                        <x-app-ui::section.heading>{{ $heading }}</x-app-ui::section.heading>
+                        <x-lui::section.heading>{{ $heading }}</x-lui::section.heading>
                     @endif
 
                     @if ($description)
-                        <x-app-ui::section.description>{{ $description }}</x-app-ui::section.description>
+                        <x-lui::section.description>{{ $description }}</x-lui::section.description>
                     @endif
                 </div>
 

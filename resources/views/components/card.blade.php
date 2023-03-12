@@ -20,7 +20,7 @@
     @endif
 
     @if ($header && ($actions || $heading || $image || $slot->isNotEmpty() || $subheading))
-        <x-app-ui::hr />
+        <x-lui::hr />
     @endif
 
     @if ($actions || $heading || $image || $slot->isNotEmpty() || $subheading)
@@ -40,15 +40,15 @@
             @if ($heading || $subheading)
                 <div class="p-4 space-y-1">
                     @if ($heading)
-                        <x-app-ui::card.heading>
+                        <x-lui::card.heading>
                             {{ $heading }}
-                        </x-app-ui::card.heading>
+                        </x-lui::card.heading>
                     @endif
 
                     @if ($subheading)
-                        <x-app-ui::card.subheading>
+                        <x-lui::card.subheading>
                             {{ $subheading }}
-                        </x-app-ui::card.subheading>
+                        </x-lui::card.subheading>
                     @endif
                 </div>
             @endif
@@ -64,7 +64,7 @@
     @endif
 
     @if ($footer && ($actions || $heading || $image || $slot->isNotEmpty() || $subheading))
-        <x-app-ui::hr />
+        <x-lui::hr />
     @endif
 
     @if ($footer)

@@ -85,7 +85,7 @@
                     type="button"
                     class="flex items-center justify-center w-10 h-10 -mr-2 text-gray-500 transition rounded-full focus:text-primary-500 hover:bg-gray-500/5 focus:bg-primary-500/10 focus:outline-none"
                 >
-                    <x-app-ui::sr-only>{{ $closeButtonLabel }}</x-app-ui::sr-only>
+                    <x-lui::sr-only>{{ $closeButtonLabel }}</x-lui::sr-only>
 
                     @unless ($closeIcon)
                         <svg class="{{ $closeIconClasses }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

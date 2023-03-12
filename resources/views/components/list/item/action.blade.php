@@ -1,3 +1,3 @@
-<x-app-ui::list.item.actions>
-    <x-app-ui::icon-button {{ $attributes }}/>
-</x-app-ui::list.item.actions>
+<x-lui::list.item.actions>
+    <x-lui::icon-button {{ $attributes }}/>
+</x-lui::list.item.actions>
