@@ -1,0 +1,28 @@
+{
+    "name": "danpalmieri/livewind-ui",
+    "description": "Laravel Blade components for TALL Stack Application kit.",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "DanPalmieri\\LiveWindUi\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DanPalmieri\\LiveWindUi\\LiveWindUiServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
