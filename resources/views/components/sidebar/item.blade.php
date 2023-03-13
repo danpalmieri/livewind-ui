@@ -17,7 +17,7 @@
 
         @if($active)
             <div class="flex-1 flex justify-end">
-                <x-icon name="bi-arrow-left-circle-fill" class="text-primary-800 bg-primary-800 rounded-full w-5 h-5" />
+                <x-icon name="bi-arrow-left-circle-fill" class="text-primary-800 bg-primary-800 rounded-full w-4 h-4" />
             </div>
         @endif
     </a>
