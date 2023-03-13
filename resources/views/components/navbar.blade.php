@@ -15,7 +15,7 @@
     'w-full max-w-6xl px-4 mx-auto sm:px-6 md:px-8' => ! $fullWidth,
 ]) }}>
     <nav
-        x-data="{ open: $persist(false) }"
+        x-data="{ open: false }"
         class="{{ generateClasses([
             'sticky top-0 z-10 w-full bg-white shadow',
             'rounded-2xl' => ! $fullWidth,

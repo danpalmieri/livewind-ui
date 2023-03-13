@@ -4,7 +4,7 @@
 ])
 
 <div
-    x-data="{ open: false }"
+    x-data="{ open: $persist(false) }"
     {{ $attributes->class(['flex min-h-full']) }}
 >
     <button
