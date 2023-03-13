@@ -10,7 +10,7 @@
         'text-white bg-primary-600' => $active,
     ]) }}>
         @if ($icon)
-            <x-dynamic-component :component="$icon" :class="'w-7 h-7' . ($active ? '' : ' text-primary-500')" />
+            <x-dynamic-component :component="$icon" :class="'w-6 h-6' . ($active ? '' : ' text-primary-500')" />
         @endif
 
         <span class="font-medium">{{ $slot }}</span>
