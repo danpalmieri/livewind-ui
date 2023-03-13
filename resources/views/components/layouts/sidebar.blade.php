@@ -24,15 +24,13 @@
 
     <aside
         x-bind:class="open ? 'translate-x-0' : '-translate-x-full'"
-        class="fixed inset-y-0 left-0 z-20 h-screen transition duration-300 lg:z-0 lg:translate-x-0"
+        class="fixed inset-y-0 left-0 z-20 h-screen transition duration-300 lg:z-0"
     >
         {{ $sidebar }}
     </aside>
 
-    <main class="{{ generateClasses([
-        'flex-1 min-h-screen w-screen',
-        'lg:pl-72' => ! $iconMenu,
-        'lg:pl-80' => $iconMenu,
+    <main x-bind:class="open ? '{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-72' }}' : ''" class="{{ generateClasses([
+        'flex-1 min-h-screen w-screen'
     ]) }}">
         {{ $slot }}
     </main>
