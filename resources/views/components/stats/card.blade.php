@@ -28,7 +28,7 @@
                 <span>{{ $description }}</span>
 
                 @if ($descriptionIcon)
-                    <x-dynamic-component :component="$descriptionIcon" class="w-7 h-7" />
+                    <x-dynamic-component :component="$descriptionIcon" class="w-5 h-5" />
                 @endif
             </div>
         @endif

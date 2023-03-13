@@ -16,7 +16,7 @@
         'text-warning-500 focus:bg-warning-500/10' => $color === 'warning',
     ]);
 
-    $iconClasses = 'w-7 h-7';
+    $iconClasses = 'w-5 h-5';
 @endphp
 
 @if ($tag === 'button')

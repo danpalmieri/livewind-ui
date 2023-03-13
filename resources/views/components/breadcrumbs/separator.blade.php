@@ -3,7 +3,7 @@
 ])
 
 @php
-    $iconClasses = 'text-gray-400 w-7 h-7';
+    $iconClasses = 'text-gray-400 w-5 h-5';
 @endphp
 
 <li {{ $attributes }}>

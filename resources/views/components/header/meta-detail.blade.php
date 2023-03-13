@@ -12,7 +12,7 @@
     <div class="flex items-center space-x-1 font-medium">
         @if ($icon)
             <x-dynamic-component :component="$icon" :class="generateClasses([
-                'w-7 h-7',
+                'w-5 h-5',
                 'text-gray-500' => ! $iconColor,
                 'text-danger-500' => $iconColor === 'danger',
                 'text-primary-500' => $iconColor === 'primary',

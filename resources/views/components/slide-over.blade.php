@@ -13,7 +13,7 @@
 ])
 
 @php
-    $closeIconClasses = 'w-7 h-7';
+    $closeIconClasses = 'w-5 h-5';
 @endphp
 
 <div

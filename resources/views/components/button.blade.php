@@ -23,7 +23,7 @@
 
     $iconClasses = generateClasses([
         'w-6 h-6' => $size === 'md',
-        'w-7 h-7' => $size === 'lg',
+        'w-5 h-5' => $size === 'lg',
         'w-5 h-5' => $size === 'sm',
         'mr-1 -ml-2' => ($iconPosition === 'before') && ($size === 'md'),
         'mr-2 -ml-3' => ($iconPosition === 'before') && ($size === 'lg'),

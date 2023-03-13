@@ -8,7 +8,7 @@
 ])
 
 @php
-    $mobileMenuIconClasses = 'w-7 h-7';
+    $mobileMenuIconClasses = 'w-5 h-5';
 @endphp
 
 <div {{ $attributes->class([

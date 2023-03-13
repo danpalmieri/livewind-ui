@@ -15,7 +15,7 @@
         'text-white bg-primary-600' => (! $active) && $completed,
     ]);
 
-    $completedIconClasses = 'absolute top-0 right-0 m-2 w-7 h-7';
+    $completedIconClasses = 'absolute top-0 right-0 m-2 w-5 h-5';
 
     $labelClasses = generateClasses([
         'text-xs font-medium',

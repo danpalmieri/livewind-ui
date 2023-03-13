@@ -10,7 +10,7 @@
 @php
     $id ??= $name;
 
-    $iconClasses = 'w-7 h-7';
+    $iconClasses = 'w-5 h-5';
 @endphp
 
 <div class="space-y-2">
