@@ -23,8 +23,8 @@
     ></button>
 
     <aside
-        x-bind:class="open ? 'translate-x-0' : '-translate-x-full'"
-        class="fixed inset-y-0 left-0 z-20 h-screen transition duration-300 lg:z-0"
+        x-bind:class="open ? 'translate-x-0' : '-translate-x-full duration-300'"
+        class="fixed inset-y-0 left-0 z-20 h-screen transition lg:z-0"
     >
         {{ $sidebar }}
     </aside>
