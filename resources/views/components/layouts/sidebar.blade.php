@@ -5,7 +5,7 @@
 ])
 
 <div
-    x-data="{ open: $persist({{ $open === true ? 'true' : 'false' }}).using(sessionStorage) }"
+    x-data="{ open: {{ $open ? 'true' : 'false' }}}"
     x-init="$watch('open', value => Cookies.set('lui-sidebar-open', value))"
     {{ $attributes->class(['flex min-h-full']) }}
 >
