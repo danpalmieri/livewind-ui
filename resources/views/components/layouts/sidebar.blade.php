@@ -25,7 +25,7 @@
     ></button>
 
     <aside
-        x-bind:class="{'translate-x-0': open, '-translate-x-full': !open"
+        x-bind:class="{'translate-x-0': open, '-translate-x-full': !open}"
         class="{{ generateClasses ([
             'fixed inset-y-0 left-0 z-20 h-screen transition lg:z-0 duration-300',
             'translate-x-0' => $open,
