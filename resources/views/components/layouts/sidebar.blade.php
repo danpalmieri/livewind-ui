@@ -25,7 +25,7 @@
     ></button>
 
     <aside
-        :class="open ? 'translate-x-0' : '-translate-x-full'"
+        x-bind:class="{'translate-x-0': open, '-translate-x-full': !open"
         class="{{ generateClasses ([
             'fixed inset-y-0 left-0 z-20 h-screen transition lg:z-0 duration-300',
             'translate-x-0' => $open,
@@ -35,7 +35,7 @@
         {{ $sidebar }}
     </aside>
 
-    <main :class="open ? '{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-72' }}' : ''" class="{{ generateClasses([
+    <main x-bind:class="{'{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-72' }}': open}" class="{{ generateClasses([
         'flex-1 min-h-screen w-screen transition duration-300',
         'lg:pl-80' => $open && $iconMenu,
         'lg:pl-72' => $open && ! $iconMenu
