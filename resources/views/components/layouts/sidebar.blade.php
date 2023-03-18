@@ -6,7 +6,7 @@
 
 <div
     x-data="{ open: $persist({{ $open ? 'true' : 'false' }}).using(sessionStorage) }"
-    x-init="$watch('open', value => window.livewire.emit('sidebarToggle', value))"
+    x-init="$watch('open', value => Cookies.set('lui-sidebar-open', value))"
     {{ $attributes->class(['flex min-h-full']) }}
 >
     <button
