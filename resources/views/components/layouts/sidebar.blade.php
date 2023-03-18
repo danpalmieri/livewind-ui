@@ -5,6 +5,7 @@
 
 <div
     x-data="{ open: $persist(true).using(sessionStorage) }"
+    x-init="$watch('open', value => window.livewire.emit('sidebarToogle', open))"
     {{ $attributes->class(['flex min-h-full']) }}
 >
     <button

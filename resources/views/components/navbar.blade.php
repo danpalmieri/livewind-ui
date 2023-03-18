@@ -16,7 +16,6 @@
 ]) }}>
     <nav
         x-data="{ open: $persist(true).using(sessionStorage) }"
-        x-init="$watch('open', value => window.livewire.emit('sidebarToogle', open))"
         class="{{ generateClasses([
             'sticky top-0 z-10 w-full bg-white shadow',
             'rounded-2xl' => ! $fullWidth,
