@@ -26,7 +26,11 @@
 
     <aside
         x-bind:class="open ? 'translate-x-0' : '-translate-x-full duration-300'"
-        class="fixed inset-y-0 left-0 z-20 h-screen transition lg:z-0"
+        class="{{ generateClasses ([
+            'fixed inset-y-0 left-0 z-20 h-screen transition lg:z-0',
+            'translate-x-0' => $open,
+            '-translate-x-full' => ! $open
+        ]) }}"
     >
         {{ $sidebar }}
     </aside>
