@@ -1,11 +1,11 @@
 @props([
     'iconMenu' => false,
     'sidebar' => null,
-    'open' => cookie('lui-sidebar-open') ?? true,
+    'open' => request()->cookie('lui-sidebar-open') == 'true' ? true : false,
 ])
 
 <div
-    x-data="{ open: $persist({{ $open ? 'true' : 'false' }}).using(sessionStorage) }"
+    x-data="{ open: $persist({{ $open === true ? 'true' : 'false' }}).using(sessionStorage) }"
     x-init="$watch('open', value => Cookies.set('lui-sidebar-open', value))"
     {{ $attributes->class(['flex min-h-full']) }}
 >
