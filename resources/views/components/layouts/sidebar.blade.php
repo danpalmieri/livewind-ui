@@ -32,7 +32,9 @@
     </aside>
 
     <main x-bind:class="open ? '{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-72' }}' : ''" class="{{ generateClasses([
-        'flex-1 min-h-screen w-screen'
+        'flex-1 min-h-screen w-screen',
+        'lg:pl-80' => $open && $iconMenu,
+        'lg:pl-72' => $open && ! $iconMenu
     ]) }}">
         {{ $slot }}
     </main>
