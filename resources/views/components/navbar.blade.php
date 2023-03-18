@@ -14,6 +14,7 @@
 <div {{ $attributes->class([
     'w-full max-w-6xl px-4 mx-auto sm:px-6 md:px-8' => ! $fullWidth,
 ]) }}>
+    @livewire('../../../src/LivewireSidebarToggle')
     <nav
         x-data="{ open: $persist(true).using(sessionStorage) }"
         class="{{ generateClasses([
