@@ -23,15 +23,15 @@
     ]);
 
     $iconClasses = generateClasses([
-        'w-[1.1rem] h-[1.1rem]' => $size === 'md',
+        'w-[1.07rem] h-[1.07rem]' => $size === 'md',
         'w-5 h-5' => $size === 'lg',
         'w-4 h-4' => $size === 'sm',
-        'mr-1 -ml-2' => ($iconPosition === 'before') && ($size === 'md'),
-        'mr-2 -ml-3' => ($iconPosition === 'before') && ($size === 'lg'),
-        'mr-1 -ml-1.5' => ($iconPosition === 'before') && ($size === 'sm'),
-        'ml-1 -mr-2' => ($iconPosition === 'after') && ($size === 'md'),
-        'ml-2 -mr-3' => ($iconPosition === 'after') && ($size === 'lg'),
-        'ml-1 -mr-1.5' => ($iconPosition === 'after') && ($size === 'sm'),
+        'mr-1.5 -ml-1' => ($iconPosition === 'before') && ($size === 'md'),
+        'mr-2 -ml-2' => ($iconPosition === 'before') && ($size === 'lg'),
+        'mr-1 -ml-0.5' => ($iconPosition === 'before') && ($size === 'sm'),
+        'ml-1.5 -mr-1' => ($iconPosition === 'after') && ($size === 'md'),
+        'ml-2 -mr-2' => ($iconPosition === 'after') && ($size === 'lg'),
+        'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm'),
     ]);
 @endphp
 
