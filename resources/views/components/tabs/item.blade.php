@@ -21,13 +21,13 @@
         @if ($icon)
             <x-dynamic-component :component="$icon" class="w-5 h-5 opacity-80" />
         @endif
-        {{ $slot }}
+        <span>{{ $slot }}</span>
     </button>
 @elseif ($tag === 'a')
     <a {{ $attributes->class([$buttonClasses]) }}>
         @if ($icon)
             <x-dynamic-component :component="$icon" class="w-5 h-5 opacity-80" />
         @endif
-        {{ $slot }}
+        <span>{{ $slot }}</span>
     </a>
 @endif
