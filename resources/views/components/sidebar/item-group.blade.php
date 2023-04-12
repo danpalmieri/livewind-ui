@@ -7,7 +7,7 @@
         <p class="px-4 font-medium">{{ $heading }}</p>
     @endif
 
-    <ul class="px-2 space-y-1">
+    <ul class="px-2">
         {{ $slot }}
     </ul>
 </nav>
