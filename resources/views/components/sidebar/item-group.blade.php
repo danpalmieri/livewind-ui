@@ -2,7 +2,7 @@
     'heading' => null,
 ])
 
-<nav {{ $attributes->class(['my-4 space-y-2']) }}>
+<nav {{ $attributes->class(['my-2.5 space-y-2']) }}>
     @if ($heading)
         <p class="px-4 font-medium">{{ $heading }}</p>
     @endif
