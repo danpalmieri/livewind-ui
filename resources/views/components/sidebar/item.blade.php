@@ -6,14 +6,20 @@
 
 <li>
     <a {{ $attributes->class([
-        'flex transition font-medium items-center focus:bg-primary-500/10 focus:text-primary-600 focus:outline-none h-10 px-4 space-x-3 rounded',
+        'flex transition font-medium items-center focus:outline-none h-10 px-4 space-x-3 rounded',
         'text-white/80 hover:bg-white/10' => $backgroundColor === 'dark' && ! $active,
-        'text-white' => $backgroundColor === 'dark' && $active,
+        'text-white font-bold focus:bg-white/80 focus:text-white' => $backgroundColor === 'dark' && $active,
         'hover:bg-gray-500/5' => $backgroundColor === 'light' && ! $active,
-        'font-bold' => $active,
+        'hover:bg-gray-500/5 font-bold focus:bg-primary-500/10 focus:text-primary-600 ' => $backgroundColor === 'light' && $active,
     ]) }}>
         @if ($icon)
-            <x-dynamic-component :component="$icon" :class="'w-5 h-5 ' . ($active ? 'text-primary-800' : ' text-primary-500')" />
+            <x-dynamic-component :component="$icon" {{ $attributes->class([
+                'w-5 h-5',
+                'text-primary-800' => $backgroundColor === 'light' && $active,
+                'text-white' => $backgroundColor === 'dark' && $active,
+                'text-primary-500' => $backgroundColor === 'light' && ! $active,
+                'text-white/80' => $backgroundColor === 'dark' && ! $active,
+            ]) }} />
         @endif
 
         <span>{{ $slot }}</span>
