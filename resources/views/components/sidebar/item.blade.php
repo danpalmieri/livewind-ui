@@ -6,7 +6,7 @@
 
 <li>
     <a {{ $attributes->class([
-        'flex transition font-medium items-center focus:outline-none h-10 px-4 space-x-3 rounded',
+        'flex transition font-medium items-center focus:outline-none h-10 px-4 space-x-5 rounded',
         'text-white/80 hover:bg-white/10' => $backgroundColor === 'dark' && ! $active,
         'text-white font-bold focus:bg-white/80 focus:text-white' => $backgroundColor === 'dark' && $active,
         'hover:bg-gray-500/5' => $backgroundColor === 'light' && ! $active,
