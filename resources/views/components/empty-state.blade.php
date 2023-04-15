@@ -1,6 +1,7 @@
 @props([
     'actions' => null,
     'description' => null,
+    'footer' => null,
     'flat' => false,
     'icon' => null,
     'illustration' => null,
@@ -56,6 +57,12 @@
     @if ($actions)
         <div class="flex items-center space-x-4 justify-center">
             {{ $actions }}
+        </div>
+    @endif
+
+    @if ('footer')
+        <div class="flex mt-4 items-center space-x-4 justify-center">
+            {{ $footer }}
         </div>
     @endif
 </div>
