@@ -1,6 +1,7 @@
 @props([
     'active' => false,
     'icon' => null,
+    'backgroundColor' => 'light',
 ])
 
 <li>
