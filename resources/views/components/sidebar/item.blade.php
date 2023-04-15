@@ -5,8 +5,10 @@
 
 <li>
     <a {{ $attributes->class([
-        'flex items-center h-10 px-4 space-x-3 rounded',
-        'transition font-medium hover:bg-gray-500/5 focus:bg-primary-500/10 focus:text-primary-600 focus:outline-none' => ! $active,
+        'flex transition font-medium items-center focus:bg-primary-500/10 focus:text-primary-600 focus:outline-none h-10 px-4 space-x-3 rounded',
+        'text-white/80 hover:bg-white/10' => $backgroundColor === 'dark' && ! $active,
+        'text-white' => $backgroundColor === 'dark' && $active,
+        'hover:bg-gray-500/5' => $backgroundColor === 'light' && ! $active,
         'font-bold' => $active,
     ]) }}>
         @if ($icon)
@@ -17,7 +19,11 @@
 
         @if($active)
             <div class="flex-1 flex justify-end">
-                <x-icon name="bi-arrow-left-circle-fill" class="text-primary-800 bg-primary-800 rounded-full w-2 h-2" />
+                <x-icon name="bi-arrow-left-circle-fill" {{ $attributes->class([
+                    'rounded-full w-2 h-2',
+                    'text-primary-800 bg-primary-800' => $backgroundColor === 'light',
+                    'text-white bg-white' => $backgroundColor === 'dark',
+                ]) }} />
             </div>
         @endif
     </a>
