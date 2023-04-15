@@ -26,7 +26,7 @@
 ]) }}>
 
     @if ($illustration)
-        <div class="flex items-center justify-center w-64 h-64">
+        <div class="flex items-center justify-center w-64">
             <img src="{{ $illustration }}" alt="" class="w-full h-full object-contain" />
         </div>
     @endif
