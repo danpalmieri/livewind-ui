@@ -5,7 +5,7 @@
 
 <main {{ $attributes->class([
     'antialiased min-h-screen w-screen',
-    'bg-gray-100' => ! $backgroundColor,
+    'bg-zinc-100' => ! $backgroundColor,
     'bg-white' => $backgroundColor === 'light',
     'py-4' => $paddingY,
 ]) }}>
