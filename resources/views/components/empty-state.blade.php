@@ -3,6 +3,7 @@
     'description' => null,
     'flat' => false,
     'icon' => null,
+    'illustration' => null,
     'heading' => null,
     'width' => 'md',
 ])
@@ -23,13 +24,22 @@
     'max-w-6xl' => $width === '6xl',
     'max-w-7xl' => $width === '7xl',
 ]) }}>
-    <div class="{{ generateClasses([
-        'flex items-center justify-center w-16 h-16 text-primary-500 rounded-full',
-        'bg-primary-50' => ! $flat,
-        'bg-white shadow' => $flat,
-    ]) }}">
-        <x-dynamic-component :component="$icon" class="w-8 h-8" />
-    </div>
+
+    @if ($illustration)
+        <div class="flex items-center justify-center w-64 h-64">
+            <img src="{{ $illustration }}" alt="" class="w-full h-full object-contain" />
+        </div>
+    @endif
+
+    @if ($icon)
+        <div class="{{ generateClasses([
+            'flex items-center justify-center w-16 h-16 text-primary-500 rounded-full',
+            'bg-primary-50' => ! $flat,
+            'bg-white shadow' => $flat,
+        ]) }}">
+            <x-dynamic-component :component="$icon" class="w-8 h-8" />
+        </div>
+    @endif
 
     <div class="max-w-xs space-y-1">
         <h2 class="text-xl font-semibold tracking-tight">{{ $heading }}</h2>
