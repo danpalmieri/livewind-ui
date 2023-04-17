@@ -77,7 +77,7 @@
                 </svg>
 				@if($text)
 				<div x-data="{texts: {{ $text }}, count: 0}" x-init="setInterval(() => count < (texts.length - 1) ? count++ : null, 2000)">
-					<x-ui.typography.h5 x-text="texts[count]" class="font-medium"></x-ui.typography.h5>
+					<h5 x-text="texts[count]" class="font-medium"></h5>
 				</div>
 				@endif
 			</div>
