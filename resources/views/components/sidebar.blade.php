@@ -26,7 +26,7 @@
             </div>
         @endif
 
-        <div class="flex-1 overflow-y-auto">
+        <div class="flex-1 divide-y divide-white/10 overflow-y-auto">
             {{ $menu }}
         </div>
     </nav>
