@@ -35,7 +35,7 @@
 	    <div class="flex justify-center w-full">
 	        <div class="flex items-center justify-center">
 	            <div class="flex flex-col items-center justify-center space-y-5 animate-pulse">
-					<div class="bg-white p-2">
+					<div class="bg-white p-2 rounded-full">
                         <svg class="mx-auto animate-spin" fill="none" height="60" width="60">
                             <circle class="stroke-zinc-900/10" cx="30.005" cy="30.005" r="28" stroke-width="2"></circle>
                             <path
@@ -64,7 +64,7 @@
 		<div class="flex items-center justify-center bg-gray-900/25
             @if($contained) absolute @else fixed @endif top-0 left-0 w-full h-full z-50" style="z-index: 999999999;">
 			<div class="flex flex-col items-center justify-center space-y-4 rounded-full bg-blue-75 dark:bg-gray-700">
-				<div class="bg-white p-2">
+				<div class="bg-white p-2 rounded-full">
                     <svg class="mx-auto animate-spin" fill="none" height="60" width="60">
                         <circle class="stroke-zinc-900/10" cx="30.005" cy="30.005" r="28" stroke-width="2"></circle>
                         <path
@@ -81,7 +81,7 @@
                 </div>
 				@if($text)
 				<div x-data="{texts: {{ $text }}, count: 0}" x-init="setInterval(() => count < (texts.length - 1) ? count++ : null, 2000)">
-					<h5 x-text="texts[count]" class="font-medium animate-pulse opacity-90"></h5>
+					<h5 x-text="texts[count]" class="font-medium animate-pulse opacity-80"></h5>
 				</div>
 				@endif
 			</div>
