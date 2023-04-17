@@ -3,7 +3,7 @@
     'contained' => false,
     'target' => NULL,
     'text' => null,
-    'logo' => true,
+    'logo' => false,
     'logoUrl' => null,
     'color' => '#000'
     ])
