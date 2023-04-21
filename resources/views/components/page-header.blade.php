@@ -6,6 +6,7 @@
     'actions' => null,
     'breadcrumbs' => null,
     'tabs' => null,
+    'divider' => false,
 ])
 
 <x-slot name="header">
@@ -49,4 +50,7 @@
         </div>
     @endisset
 
+    @if($divider)
+        <div class="border-b mb-6 mt-5"></div>
+    @endif
 </x-slot>
