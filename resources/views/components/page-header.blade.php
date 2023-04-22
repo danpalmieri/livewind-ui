@@ -51,6 +51,6 @@
     @endisset
 
     @if($divider)
-        <div class="border-b mb-6 mt-5"></div>
+        <div class="border-b mb-8 mt-5"></div>
     @endif
 </x-slot>
