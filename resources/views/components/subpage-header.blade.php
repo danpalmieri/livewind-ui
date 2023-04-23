@@ -1,6 +1,7 @@
 @props([
     'title' => null,
     'description' => null,
+    'divider' => false,
     'actions' => null
 ])
 
@@ -12,3 +13,7 @@
 
     {{ $slot }}
 </div>
+
+@if($divider)
+    <hr class="border-2">
+@endif
