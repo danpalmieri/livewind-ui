@@ -6,9 +6,9 @@
 
 <div class="md:grid md:grid-cols-3 md:gap-6">
     <div class="flex justify-between md:col-span-1">
-        <div class="px-4 sm:px-0 pt-2">
-            <h3 class="font-medium text-zinc-900">{{ $title }}</h3>
-            <p class="mt-1 text-sm text-zinc-500">
+        <div class="px-4 sm:px-0 pt-4">
+            <h3 class="font-medium text-lg text-zinc-900">{{ $title }}</h3>
+            <p class="mt-1 text-zinc-500">
                 {{ $description }}
             </p>
         </div>
