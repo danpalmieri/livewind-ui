@@ -6,7 +6,7 @@
 
 <div class="flex justify-between items-center">
     <div>
-        <h3 class="text-lg font-medium">{{ $title }}</h3>
+        <h3 class="text-xl font-semibold">{{ $title }}</h3>
         <p class="text-zinc-500">{{ $description }}</p>
     </div>
 
