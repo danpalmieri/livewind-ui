@@ -9,7 +9,7 @@
 
 @php
     $buttonClasses = generateClasses([
-        'inline-flex items-center justify-center font-medium tracking-tight transition rounded focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
+        'inline-flex items-center justify-center font-medium tracking-tight transition rounded disabled:opacity-50 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
         'bg-primary-600 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700' => $color === 'primary',
         'bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-600 focus:ring-offset-zinc-600' => $color === 'dark',
         'h-9 px-4' => $size === 'md',
