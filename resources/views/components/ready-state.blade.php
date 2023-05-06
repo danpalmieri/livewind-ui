@@ -1,9 +1,9 @@
 @props([
-    'isReady' => false,
+    'ready' => false,
 ])
 
-@if($isReady)
-<x-lui::loading inline />
-@else
+@if($ready)
 {{ $slot }}
+@else
+<x-lui::loading inline />
 @endif
