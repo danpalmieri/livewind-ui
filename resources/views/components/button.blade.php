@@ -40,7 +40,7 @@
 @if ($tag === 'button')
     <button
         type="{{ $type }}"
-        wire:loading.attr="disabled"
+        @if($loadingFeedback) wire:loading.attr="disabled" @endif
         {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($icon && $iconPosition === 'before')
