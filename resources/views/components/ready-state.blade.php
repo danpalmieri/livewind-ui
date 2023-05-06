@@ -1,8 +1,6 @@
 <div wire:init="init">
     @if($ready)
-    <div>
-        {{ $slot }}
-    </div>
+    {{ $slot }}
     @else
     <x-lui::loading inline />
     @endif
