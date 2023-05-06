@@ -6,6 +6,7 @@
     'type' => 'button',
     'size' => 'md',
     'loadingFeedback' => false,
+    'loadingDisable' => false,
     'loadingText' => 'Salvando...',
 ])
 
@@ -40,7 +41,7 @@
 @if ($tag === 'button')
     <button
         type="{{ $type }}"
-        @if($loadingFeedback) wire:loading.attr="disabled" @endif
+        @if($loadingDisable) wire:loading.attr="disabled" @endif
         {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($icon && $iconPosition === 'before')
