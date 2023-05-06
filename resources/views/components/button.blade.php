@@ -40,7 +40,6 @@
 @if ($tag === 'button')
     <button
         type="{{ $type }}"
-        {{ $loadingFeedback ? 'wire:loading.attr="disabled"' : '' }}
         {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($icon && $iconPosition === 'before')
@@ -48,7 +47,12 @@
         @endif
 
         <span>
-            {{ $slot }}
+            @if($loadingFeedback)
+            <span wire:loading.remove>{{ $slot }}</span>
+            <span wire:loading>{{ $loadingText }}</span>
+            @else
+            <span>{{ $slot }}</span>
+            @endif
         </span>
 
         @if ($icon && $iconPosition === 'after')
