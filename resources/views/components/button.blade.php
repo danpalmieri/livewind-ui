@@ -5,6 +5,8 @@
     'tag' => 'button',
     'type' => 'button',
     'size' => 'md',
+    'loadingFeedback' => false,
+    'loadingText' => 'Salvando...',
 ])
 
 @php
@@ -38,13 +40,19 @@
 @if ($tag === 'button')
     <button
         type="{{ $type }}"
+        {{ $loadingFeedback ? 'wire:loading.attr="disabled"' : null }}
         {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($icon && $iconPosition === 'before')
             <x-dynamic-component :component="$icon" :class="$iconClasses" />
         @endif
 
+        @if($loadingFeedback)
+        <span wire:loading.remove>{{ $slot }}</span>
+        <span wire:loading>{{ $loadingText }}</span>
+        @else
         <span>{{ $slot }}</span>
+        @endif
 
         @if ($icon && $iconPosition === 'after')
             <x-dynamic-component :component="$icon" :class="$iconClasses" />
