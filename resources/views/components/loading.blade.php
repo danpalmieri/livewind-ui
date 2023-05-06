@@ -10,7 +10,7 @@
 
 @if($inline)
 <div>
-	<div wire:loading.delay @if($target) wire:target="{{ $target }}" @endif class="z-50 w-full">
+	<div wire:loading @if($target) wire:target="{{ $target }}" @endif class="z-50 w-full">
 	    <style>
 	        @keyframes arrow {
 	            50% {
