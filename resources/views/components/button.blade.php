@@ -48,12 +48,7 @@
         @endif
 
         <span>
-            @if($loadingFeedback)
-            <span wire:loading.remove>{{ $slot }}</span>
-            <span wire:loading>{{ $loadingText }}</span>
-            @else
-            <span>{{ $slot }}</span>
-            @endif
+            {{ $slot }}
         </span>
 
         @if ($icon && $iconPosition === 'after')
