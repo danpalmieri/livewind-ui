@@ -43,22 +43,21 @@
 @if($eventLoadingFeedback)
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        Livewire.hook('message.sent', (message,component) => {
-
         let button;
 
-        if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-            document.getElementById('button_{{ $id }}').disabled = true;
-            button = document.getElementById('button_text_{{ $id }}').innerHTML;
-            document.getElementById('button_text_{{ $id }}').innerHTML = 'Aguarde...';
-        }
+        Livewire.hook('message.sent', (message,component) => {
+            if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+                document.getElementById('button_{{ $id }}').disabled = true;
+                button = document.getElementById('button_text_{{ $id }}').innerHTML;
+                document.getElementById('button_text_{{ $id }}').innerHTML = 'Aguarde...';
+            }
         });
 
         Livewire.hook('message.processed', (message,component) => {
-        if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-            document.getElementById('button_{{ $id }}').disabled = false;
-            document.getElementById('button_text_{{ $id }}').innerHTML = button;
-        }
+            if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+                document.getElementById('button_{{ $id }}').disabled = false;
+                document.getElementById('button_text_{{ $id }}').innerHTML = button;
+            }
         });
     });
 </script>
