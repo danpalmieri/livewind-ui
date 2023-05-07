@@ -40,7 +40,7 @@
 @endphp
 
 @if($eventLoadingFeedback)
-<script>
+<script wire:ignore>
     document.addEventListener("DOMContentLoaded", () => {
         let button;
 
