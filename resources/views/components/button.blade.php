@@ -1,4 +1,5 @@
 @props([
+    'id' => random_int(1, 9999999),
     'color' => 'primary',
     'icon' => null,
     'iconPosition' => 'before',
@@ -12,7 +13,6 @@
 ])
 
 @php
-    $id = random_int(1, 9999999);
     $buttonClasses = generateClasses([
         'inline-flex items-center justify-center font-medium tracking-tight transition rounded disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
         'bg-primary-600 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700' => $color === 'primary',
@@ -55,7 +55,7 @@
                 document.getElementById('button_icon_{{ $id }}').style.display = 'none';
                 @endif
 
-                document.getElementById('button_text_{{ $id }}').innerHTML = 'Aguarde...';
+                document.getElementById('button_text_{{ $id }}').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="{{ $iconClasses }} animate-spin" viewBox="0 0 16 16"><path d="M15.6,5.6l-0.9,0.6C14.9,6.8,15,7.4,15,8c0,3.9-3.1,7-7,7s-7-3.1-7-7c0-3.9,3.1-7,7-7c0.8,0,1.5,0.1,2.2,0.4l0.5-0.9C9.8,0.2,8.9,0,8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8C16,7.2,15.9,6.4,15.6,5.6z"/></svg>';
             }
         });
 
