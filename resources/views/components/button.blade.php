@@ -41,16 +41,18 @@
 
 @if($eventLoadingFeedback)
 <script>
-    window.Livewire.hook('message.sent', (message,component) => {
-      if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-        console.log('emited');
-      }
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+        Livewire.hook('message.sent', (message,component) => {
+        if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+            console.log('emited');
+        }
+        });
 
-    window.Livewire.hook('message.processed', (message,component) => {
-      if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-        console.log('processed');
-      }
+        Livewire.hook('message.processed', (message,component) => {
+        if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+            console.log('processed');
+        }
+        });
     });
 </script>
 @endif
