@@ -88,7 +88,7 @@
             C9.8,0.2,8.9,0,8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8C16,7.2,15.9,6.4,15.6,5.6z"/>
             </svg>
         @else
-        <x-dynamic-component :component="$icon" :class="$iconClasses" />
+        <x-dynamic-component id="button_icon_{{ $id }}" :component="$icon" :class="$iconClasses" />
         @endif
     @endif
 
