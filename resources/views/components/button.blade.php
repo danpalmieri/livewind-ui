@@ -45,12 +45,14 @@
     document.addEventListener("DOMContentLoaded", () => {
         Livewire.hook('message.sent', (message,component) => {
         if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+            console.log(message.updateQueue[0]);
             document.getElementById('button_{{ $id }}').disabled = true;
         }
         });
 
         Livewire.hook('message.processed', (message,component) => {
         if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+            console.log(message.updateQueue[0]);
             document.getElementById('button_{{ $id }}').disabled = false;
         }
         });
