@@ -44,16 +44,20 @@
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         Livewire.hook('message.sent', (message,component) => {
+
+        let button;
+
         if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-            console.log(message.updateQueue[0]);
             document.getElementById('button_{{ $id }}').disabled = true;
+            button = document.getElementById('button_text_{{ $id }}').innerHTML;
+            document.getElementById('button_text_{{ $id }}').innerHTML = 'Aguarde...';
         }
         });
 
         Livewire.hook('message.processed', (message,component) => {
         if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-            console.log(message.updateQueue[0]);
             document.getElementById('button_{{ $id }}').disabled = false;
+            document.getElementById('button_text_{{ $id }}').innerHTML = button;
         }
         });
     });
@@ -92,7 +96,7 @@
         @endif
 
         @else
-        <span>{{ $slot }}</span>
+        <span id="button_text_{{ $id }}">{{ $slot }}</span>
         @endif
     </span>
 
