@@ -42,7 +42,7 @@
 @if($eventLoadingFeedback)
 <script wire:ignore>
     console.log(123);
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener('livewire:load', function () {
         console.log(123333);
         let button;
 
