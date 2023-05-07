@@ -39,7 +39,7 @@
     ]);
 @endphp
 
-@if($eventLoadingFeedback)
+@if(filled($eventLoadingFeedback))
 <script>
     Livewire.hook('message.sent', (message,component) => {
       if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
