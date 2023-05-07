@@ -8,6 +8,7 @@
     'loadingFeedback' => false,
     'loadingDisable' => false,
     'loadingText' => 'Salvando...',
+    'eventLoadingFeedback' => null,
 ])
 
 @php
@@ -37,6 +38,22 @@
         'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm') && ($loadingText !== 'icon'),
     ]);
 @endphp
+
+@if($eventLoadingFeedback)
+<script>
+    Livewire.hook('message.sent', (message,component) => {
+      if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+        console.log('emited');
+      }
+    });
+
+    Livewire.hook('message.processed', (message,component) => {
+      if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
+        console.log('processed');
+      }
+    });
+</script>
+@endif
 
 @if ($tag === 'button')
     <button
