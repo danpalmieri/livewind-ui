@@ -29,12 +29,12 @@
         'w-[1.07rem] h-[1.07rem]' => $size === 'md',
         'w-5 h-5' => $size === 'lg',
         'w-4 h-4' => $size === 'sm',
-        'mr-1.5 -ml-1' => ($iconPosition === 'before') && ($size === 'md'),
-        'mr-2 -ml-2' => ($iconPosition === 'before') && ($size === 'lg'),
-        'mr-1 -ml-0.5' => ($iconPosition === 'before') && ($size === 'sm'),
-        'ml-1.5 -mr-1' => ($iconPosition === 'after') && ($size === 'md'),
-        'ml-2 -mr-2' => ($iconPosition === 'after') && ($size === 'lg'),
-        'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm'),
+        'mr-1.5 -ml-1' => ($iconPosition === 'before') && ($size === 'md') && ($loadingText !== 'icon'),
+        'mr-2 -ml-2' => ($iconPosition === 'before') && ($size === 'lg') && ($loadingText !== 'icon'),
+        'mr-1 -ml-0.5' => ($iconPosition === 'before') && ($size === 'sm') && ($loadingText !== 'icon'),
+        'ml-1.5 -mr-1' => ($iconPosition === 'after') && ($size === 'md') && ($loadingText !== 'icon'),
+        'ml-2 -mr-2' => ($iconPosition === 'after') && ($size === 'lg') && ($loadingText !== 'icon'),
+        'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm') && ($loadingText !== 'icon'),
     ]);
 @endphp
 
@@ -59,7 +59,16 @@
         <span>
             @if($loadingFeedback)
             <span wire:loading.remove>{{ $slot }}</span>
+
+            @if($loadingText === 'icon')
+            <svg xmlns="http://www.w3.org/2000/svg" wire:loading width="16" height="16" fill="currentColor" class="{{ $iconClasses }} animate-spin" viewBox="0 0 16 16">
+                <path d="M15.6,5.6l-0.9,0.6C14.9,6.8,15,7.4,15,8c0,3.9-3.1,7-7,7s-7-3.1-7-7c0-3.9,3.1-7,7-7c0.8,0,1.5,0.1,2.2,0.4l0.5-0.9
+                C9.8,0.2,8.9,0,8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8C16,7.2,15.9,6.4,15.6,5.6z"/>
+            </svg>
+            @else
             <span wire:loading>{{ $loadingText }}</span>
+            @endif
+
             @else
             <span>{{ $slot }}</span>
             @endif
