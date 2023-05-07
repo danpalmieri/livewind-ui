@@ -38,17 +38,16 @@
         'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm') && ($loadingText !== 'icon'),
     ]);
 @endphp
-<div>daniel</div>
+
 @if($eventLoadingFeedback)
-<div>lucas</div>
 <script>
-    Livewire.hook('message.sent', (message,component) => {
+    window.Livewire.hook('message.sent', (message,component) => {
       if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
         console.log('emited');
       }
     });
 
-    Livewire.hook('message.processed', (message,component) => {
+    window.Livewire.hook('message.processed', (message,component) => {
       if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
         console.log('processed');
       }
