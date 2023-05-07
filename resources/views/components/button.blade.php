@@ -38,8 +38,9 @@
         'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm') && ($loadingText !== 'icon'),
     ]);
 @endphp
-
-@if(filled($eventLoadingFeedback))
+<div>daniel</div>
+@if($eventLoadingFeedback)
+<div>lucas</div>
 <script>
     Livewire.hook('message.sent', (message,component) => {
       if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
