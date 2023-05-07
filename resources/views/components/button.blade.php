@@ -2,7 +2,6 @@
     'id' => random_int(1, 9999999),
     'color' => 'primary',
     'icon' => null,
-    'iconPosition' => 'before',
     'tag' => 'button',
     'type' => 'button',
     'size' => 'md',
@@ -28,15 +27,9 @@
     ]);
 
     $iconClasses = generateClasses([
-        'w-[1.07rem] h-[1.07rem]' => $size === 'md',
-        'w-5 h-5' => $size === 'lg',
-        'w-4 h-4' => $size === 'sm',
-        'mr-1.5 -ml-1' => ($iconPosition === 'before') && ($size === 'md'),
-        'mr-2 -ml-2' => ($iconPosition === 'before') && ($size === 'lg'),
-        'mr-1 -ml-0.5' => ($iconPosition === 'before') && ($size === 'sm'),
-        'ml-1.5 -mr-1' => ($iconPosition === 'after') && ($size === 'md'),
-        'ml-2 -mr-2' => ($iconPosition === 'after') && ($size === 'lg'),
-        'ml-1 -mr-0.5' => ($iconPosition === 'after') && ($size === 'sm'),
+        'mr-1.5 -ml-1 w-[1.07rem] h-[1.07rem]' => $size === 'md',
+        'mr-2 -ml-2 w-5 h-5' => $size === 'lg',
+        'mr-1 -ml-0.5 w-4 h-4' => $size === 'sm',
     ]);
 
     $loadingIconClasses = generateClasses([
@@ -86,7 +79,7 @@
     @if($loadingDisable) wire:loading.attr="disabled" @endif
     {{ $attributes->class([$buttonClasses]) }}
 >
-    @if ($icon && $iconPosition === 'before')
+    @if ($icon)
         @if($loadingFeedback)
         <x-dynamic-component id="button_icon_{{ $id }}" wire:loading.remove :component="$icon" :class="$iconClasses" />
         <svg xmlns="http://www.w3.org/2000/svg" wire:loading width="16" height="16" fill="currentColor" class="{{ $iconClasses }} animate-spin" viewBox="0 0 16 16">
@@ -99,7 +92,7 @@
     @endif
 
     <span>
-        @if($loadingFeedback)
+        @if($loadingFeedback && !$icon)
         <span wire:loading.remove>{{ $slot }}</span>
 
         @if($loadingText === 'icon')
@@ -115,8 +108,4 @@
         <span id="button_text_{{ $id }}">{{ $slot }}</span>
         @endif
     </span>
-
-    @if ($icon && $iconPosition === 'after')
-        <x-dynamic-component :component="$icon" :class="$iconClasses" />
-    @endif
 </{{ $tag }}>
