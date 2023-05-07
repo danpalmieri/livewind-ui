@@ -55,8 +55,8 @@
                 <defs>
                         <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear" x1="50.322" x2="6.877" y1="19.8"
                         y2="42.051">
-                        <stop stop-color="{{ $color }}"></stop>
-                        <stop offset="1" stop-color="{{ $color }}" stop-opacity="0"></stop>
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
                     </linearGradient>
                 </defs>
             </svg>
