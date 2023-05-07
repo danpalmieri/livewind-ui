@@ -44,7 +44,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         let button;
 
-        Livewire.hook('message.sent', (message,component) => {
+        window.Livewire.hook('message.sent', (message,component) => {
             if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
                 button = document.getElementById('button_text_{{ $id }}').innerHTML;
 
@@ -58,7 +58,7 @@
             }
         });
 
-        Livewire.hook('message.processed', (message,component) => {
+        window.Livewire.hook('message.processed', (message,component) => {
             if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
                 document.getElementById('button_{{ $id }}').disabled = false;
 
