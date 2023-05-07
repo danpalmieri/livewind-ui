@@ -47,9 +47,14 @@
 
         Livewire.hook('message.sent', (message,component) => {
             if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
-                document.getElementById('button_{{ $id }}').disabled = true;
-                document.getElementById('button_icon_{{ $id }}').style.display = 'none';
                 button = document.getElementById('button_text_{{ $id }}').innerHTML;
+
+                document.getElementById('button_{{ $id }}').disabled = true;
+
+                @if($icon)
+                document.getElementById('button_icon_{{ $id }}').style.display = 'none';
+                @endif
+
                 document.getElementById('button_text_{{ $id }}').innerHTML = 'Aguarde...';
             }
         });
@@ -57,7 +62,11 @@
         Livewire.hook('message.processed', (message,component) => {
             if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
                 document.getElementById('button_{{ $id }}').disabled = false;
+
+                @if($icon)
                 document.getElementById('button_icon_{{ $id }}').style.display = 'inline-block';
+                @endif
+
                 document.getElementById('button_text_{{ $id }}').innerHTML = button;
             }
         });
