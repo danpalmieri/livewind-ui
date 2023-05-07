@@ -14,7 +14,7 @@
     ]) }}>
         @if ($icon)
             <x-dynamic-component :component="$icon" {{ $attributes->class([
-                'w-5 h-5',
+                'w-[1.25rem] h-[1.25rem]',
                 'text-primary-800' => $backgroundColor === 'light' && $active,
                 'text-white' => $backgroundColor === 'dark' && $active,
                 'text-primary-500' => $backgroundColor === 'light' && ! $active,
