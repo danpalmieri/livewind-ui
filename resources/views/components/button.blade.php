@@ -41,14 +41,11 @@
 
 @if($eventLoadingFeedback)
 @push('footer-scripts')
-<script wire:ignore>
-    console.log(123);
+<script>
     document.addEventListener('livewire:load', function () {
-        console.log(123333);
         let button;
 
         window.Livewire.hook('message.sent', (message,component) => {
-            console.log(1232323232);
             if (message.updateQueue[0].payload.event === '{{ $eventLoadingFeedback }}') {
                 button = document.getElementById('button_text_{{ $id }}').innerHTML;
 
