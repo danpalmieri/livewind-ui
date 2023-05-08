@@ -40,7 +40,6 @@
 @endphp
 
 @if($eventLoadingFeedback)
-@push('footer-scripts')
 <script>
     document.addEventListener('livewire:load', function () {
         let button;
@@ -72,7 +71,6 @@
         });
     });
 </script>
-@endpush
 @endif
 
 <{{ $tag }}
