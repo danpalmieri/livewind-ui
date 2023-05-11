@@ -44,7 +44,7 @@
     id="button_{{ $id }}"
     type="{{ $type }}"
     @if($loadingDisable) wire:loading.attr="disabled" @endif
-    @if($eventLoadingFeedback) @click="console.log({{ $id }}); $dispatch('button-loading-event', {{ json_encode(['id' => $id, 'event' => $eventLoadingFeedback, 'icon' => $icon]) }})" @endif
+    @if($eventLoadingFeedback) x-on:click="console.log({{ $id }}); $dispatch('button-loading-event', {{ json_encode(['id' => $id, 'event' => $eventLoadingFeedback, 'icon' => $icon]) }})" @endif
     {{ $attributes->class([$buttonClasses]) }}
 >
     @if ($icon)
