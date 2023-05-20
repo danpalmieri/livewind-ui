@@ -1,7 +1,7 @@
 @props([
     'iconMenu' => false,
     'sidebar' => null,
-    'open' => request()->cookie('lui-sidebar-open') == 'true' ? true : false,
+    'open' => request()->hasCookie('lui-sidebar-open') ? request()->cookie('lui-sidebar-open') : true,
 ])
 
 <div
