@@ -3,7 +3,7 @@
 ])
 @php
     $classes = generateClasses([
-        'inline-flex items-center justify-center space-x-10 text-zinc-600',
+        'inline-flex items-center justify-center space-x-9 border-b-4 border-zinc-400',
         'text-lg' => $size === 'lg',
         'text-sm' => $size === 'sm',
     ]);
