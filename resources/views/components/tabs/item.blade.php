@@ -7,8 +7,8 @@
 
 @php
     $buttonClasses = generateClasses([
-        'flex items-center h-8 items-center border-bottom-3 border-transparent space-x-2 transition rounded focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-inset',
-        'hover:text-zinc-800 focus:text-primary-600' => ! $active,
+        'flex items-center h-8 items-center border-b-3 border-transparent space-x-4 transition rounded focus:outline-none',
+        'hover:text-zinc-800' => ! $active,
         'text-primary-600 border-primary-600 font-medium' => $active,
     ]);
 @endphp
