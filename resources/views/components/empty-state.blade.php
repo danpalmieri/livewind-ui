@@ -34,7 +34,7 @@
 
     @if ($icon)
         <div class="{{ generateClasses([
-            'flex items-center justify-center w-16 h-16 text-primary-500 rounded-full',
+            'flex items-center justify-center w-16 h-16 text-primary-600 rounded-full',
             'bg-primary-50' => ! $flat,
             'bg-white shadow' => $flat,
         ]) }}">

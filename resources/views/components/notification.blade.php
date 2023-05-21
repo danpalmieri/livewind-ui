@@ -10,7 +10,7 @@
     @if ($icon)
         <x-dynamic-component :component="$icon" :class="generateClasses([
             'flex-shrink-0 w-6 h-6',
-            'text-primary-500' => $color === 'primary',
+            'text-primary-600' => $color === 'primary',
             'text-danger-500' => $color === 'danger',
             'text-success-500' => $color === 'success',
             'text-warning-500' => $color === 'warning',

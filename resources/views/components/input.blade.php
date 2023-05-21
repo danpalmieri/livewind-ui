@@ -32,7 +32,7 @@
     <div class="relative group">
         @if ($icon && $iconPosition === 'before')
             <span class="{{ generateClasses([
-                'absolute inset-y-0 left-0 flex items-center justify-center w-10 h-10 transition pointer-events-none group-focus-within:text-primary-500',
+                'absolute inset-y-0 left-0 flex items-center justify-center w-10 h-10 transition pointer-events-none group-focus-within:text-primary-600',
                 'text-gray-400' => (! $errorText) && (! $name || ! $errors->has($name)),
                 'text-danger-400' => $errorText || ($name && $errors->has($name)),
             ]) }}">
@@ -55,7 +55,7 @@
 
         @if ($icon && $iconPosition === 'after')
             <span class="{{ generateClasses([
-                'absolute inset-y-0 right-0 flex items-center justify-center w-10 h-10 transition pointer-events-none group-focus-within:text-primary-500',
+                'absolute inset-y-0 right-0 flex items-center justify-center w-10 h-10 transition pointer-events-none group-focus-within:text-primary-600',
                 'text-gray-400' => (! $errorText) && (! $name || ! $errors->has($name)),
                 'text-danger-400' => $errorText || ($name && $errors->has($name)),
             ]) }}">

@@ -25,7 +25,7 @@
 
     $iconClasses = generateClasses([
         'mr-2 -ml-1 group-hover:text-white group-focus:text-white w-5 h-5',
-        'text-primary-500' => $color === 'primary',
+        'text-primary-600' => $color === 'primary',
         'text-danger-500' => $color === 'danger',
         'text-success-500' => $color === 'success',
         'text-warning-500' => $color === 'warning',

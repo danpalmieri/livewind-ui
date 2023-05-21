@@ -13,7 +13,7 @@
         'ring-white' => $backgroundColor === 'light',
         'text-gray-400 border-gray-200 bg-gray-50' => ! $color,
         'text-danger-500 border-danger-500 bg-danger-50' => $color === 'danger',
-        'text-primary-500 border-primary-500 bg-primary-50' => $color === 'primary',
+        'text-primary-600 border-primary-500 bg-primary-50' => $color === 'primary',
         'text-success-500 border-success-500 bg-success-50' => $color === 'success',
         'text-warning-500 border-warning-500 bg-warning-50' => $color === 'warning',
     ]) }}">
