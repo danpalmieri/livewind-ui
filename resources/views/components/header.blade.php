@@ -9,7 +9,7 @@
 ])
 
 <header {{ $attributes->class([
-    'bg-gray-100' => $backgroundColor !== 'light',
+    'bg-zinc-100' => $backgroundColor !== 'light',
     'bg-white' => $backgroundColor === 'light',
 ]) }}>
     <div class="w-full max-w-6xl px-4 mx-auto sm:px-6 md:px-8">

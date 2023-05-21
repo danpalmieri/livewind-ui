@@ -12,7 +12,7 @@
         x-on:click="open = ! open"
         x-bind:class="{
             '{{ generateClasses([
-                'hover:bg-gray-500/5 focus:text-primary-600',
+                'hover:bg-zinc-500/5 focus:text-primary-600',
                 'focus:ring-2 focus:ring-inset focus:ring-primary-500 focus:bg-primary-500/10' => ! $flat,
             ]) }}': ! open,
             '{{ generateClasses([

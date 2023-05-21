@@ -10,7 +10,7 @@
 @php
     $buttonClasses = generateClasses([
         'relative block w-full text-left px-6 py-3 rounded-xl focus:outline-none',
-        'bg-gray-50' => (! $active) && (! $completed),
+        'bg-zinc-50' => (! $active) && (! $completed),
         'text-primary-600 bg-primary-50 ring-2 ring-primary-500 ring-inset' => $active,
         'text-white bg-primary-600' => (! $active) && $completed,
     ]);

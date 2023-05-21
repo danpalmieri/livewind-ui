@@ -11,7 +11,7 @@
         'p-2 rounded-lg' => $active && (! $flat),
         'hover:underline' => ! $active || $flat,
         'text-zinc-800' => $active && ($color !== 'primary'),
-        'bg-gray-500/5' => $active && ($color !== 'primary') && (! $flat),
+        'bg-zinc-500/5' => $active && ($color !== 'primary') && (! $flat),
         'text-primary-600' => $active && ($color === 'primary'),
         'bg-primary-500/10' => $active && ($color === 'primary') && (! $flat),
     ]) }}>

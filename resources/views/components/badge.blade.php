@@ -20,7 +20,7 @@
 
 <span {{ $attributes->class([
     'inline-flex items-center justify-center font-semibold tracking-tight rounded-full',
-    'text-zinc-600 bg-gray-100' => (! $color) || ($color === 'secondary'),
+    'text-zinc-600 bg-zinc-100' => (! $color) || ($color === 'secondary'),
     'h-6 px-2 text-sm' => $size === 'md',
     'text-danger-700 bg-danger-500/10' => $color === 'danger',
     'text-primary-700 bg-primary-500/10' => $color === 'primary',

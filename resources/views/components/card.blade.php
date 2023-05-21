@@ -28,7 +28,7 @@
         <div class="space-y-2">
             @if ($image)
                 <figure class="relative aspect-w-16 aspect-h-9">
-                    <div aria-hidden="true" class="absolute inset-0 bg-gray-200 animate-pulse rounded-lg"></div>
+                    <div aria-hidden="true" class="absolute inset-0 bg-zinc-200 animate-pulse rounded-lg"></div>
 
                     <img
                         class="absolute inset-0 object-cover rounded-lg"

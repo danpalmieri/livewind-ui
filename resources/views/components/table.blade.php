@@ -12,7 +12,7 @@
         ]) }}">
             <table class="w-full text-left divide-y table-auto">
                 <thead>
-                    <tr class="divide-x bg-gray-50">
+                    <tr class="divide-x bg-zinc-50">
                         {{ $columns }}
                     </tr>
                 </thead>

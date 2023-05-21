@@ -11,7 +11,7 @@
         'relative flex items-center justify-center flex-shrink-0 w-8 h-8 border rounded-full ring-4',
         'ring-gray-100' => $backgroundColor !== 'light',
         'ring-white' => $backgroundColor === 'light',
-        'text-zinc-400 border-gray-200 bg-gray-50' => ! $color,
+        'text-zinc-400 border-gray-200 bg-zinc-50' => ! $color,
         'text-danger-500 border-danger-500 bg-danger-50' => $color === 'danger',
         'text-primary-600 border-primary-500 bg-primary-50' => $color === 'primary',
         'text-success-500 border-success-500 bg-success-50' => $color === 'success',

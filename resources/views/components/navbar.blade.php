@@ -39,7 +39,7 @@
                         type="button"
                         aria-controls="{{ $mobileMenuId }}"
                         x-bind:aria-expanded="open"
-                        class="flex items-center justify-center w-10 h-10 -mr-2 text-primary-600 transition rounded-full hover:bg-gray-500/5 focus:bg-primary-500/10 focus:outline-none"
+                        class="flex items-center justify-center w-10 h-10 -mr-2 text-primary-600 transition rounded-full hover:bg-zinc-500/5 focus:bg-primary-500/10 focus:outline-none"
                     >
                         @unless ($mobileMenuIcon)
                             <svg class="{{ $mobileMenuIconClasses }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
