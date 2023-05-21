@@ -6,6 +6,7 @@
     'image' => null,
     'imageAlt' => null,
     'subheading' => null,
+    'noPadding' => false
 ])
 
 @php
@@ -54,7 +55,7 @@
             @endif
 
             @if ($slot->isNotEmpty())
-                <div class="px-4 py-2 space-y-4">
+                <div class="{{ $noPadding ? '' : 'px-4 py-2 space-y-4' }}">
                     {{ $slot }}
                 </div>
             @endif
