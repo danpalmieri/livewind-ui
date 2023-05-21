@@ -31,7 +31,7 @@
                 </div>
 
                 @isset($description)
-                    <div class="text-sm mt-1 text-zinc-500">{{ $description }}</div>
+                    <div class="mt-1 text-lg text-zinc-700">{{ $description }}</div>
                 @endisset
             </div>
 
