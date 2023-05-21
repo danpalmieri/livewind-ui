@@ -15,5 +15,5 @@
 </div>
 
 @if($divider)
-    <hr class="border-2 border-zinc-200/80">
+    <hr class="border-1">
 @endif
