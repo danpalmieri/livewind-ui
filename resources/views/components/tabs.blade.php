@@ -8,7 +8,7 @@
         'text-sm' => $size === 'sm',
     ]);
 @endphp
-<div class="border-b-2 border-zinc-300 pb-1.5 w-full">
+<div class="border-b-2 border-zinc-300/80 pb-1.5 w-full">
     <nav {{ $attributes->class([$classes]) }}>
     {{ $slot }}
     </nav>

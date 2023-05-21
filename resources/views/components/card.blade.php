@@ -15,7 +15,7 @@
 
 <div {{ $attributes->class(['p-2 space-y-2 bg-white border rounded-xl']) }}>
     @if ($header)
-        <div class="px-4 py-2">
+        <div class="px-3 py-1">
             {{ $header }}
         </div>
     @endif
@@ -55,7 +55,7 @@
             @endif
 
             @if ($slot->isNotEmpty())
-                <div class="{{ $noPadding ? '' : 'px-4 py-2 space-y-4' }}">
+                <div class="{{ $noPadding ? '' : 'px-3 py-2 space-y-4' }}">
                     {{ $slot }}
                 </div>
             @endif
@@ -69,7 +69,7 @@
     @endif
 
     @if ($footer)
-        <div class="px-4 py-2">
+        <div class="px-3 py-2">
             {{ $footer }}
         </div>
     @endif
