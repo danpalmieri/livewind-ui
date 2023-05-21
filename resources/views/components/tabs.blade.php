@@ -3,11 +3,13 @@
 ])
 @php
     $classes = generateClasses([
-        'inline-flex items-center justify-center space-x-9 border-b-4 border-zinc-400',
+        'inline-flex items-center justify-center space-x-9',
         'text-lg' => $size === 'lg',
         'text-sm' => $size === 'sm',
     ]);
 @endphp
-<nav {{ $attributes->class([$classes]) }}>
+<div class="border-b-2 border-zinc-200 w-full">
+    <nav {{ $attributes->class([$classes]) }}>
     {{ $slot }}
-</nav>
+    </nav>
+</div>
