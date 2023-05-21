@@ -1,5 +1,5 @@
 @props([
-    'color' => 'primary',
+    'color' => 'dark',
     'icon' => null,
     'label' => null,
     'tag' => 'button',
@@ -14,6 +14,7 @@
         'text-gray-500 focus:bg-gray-500/10' => $color === 'secondary',
         'text-success-500 focus:bg-success-500/10' => $color === 'success',
         'text-warning-500 focus:bg-warning-500/10' => $color === 'warning',
+        'text-black focus:bg-zinc-500/10' => $color === 'dark',
     ]);
 
     $iconClasses = 'w-5 h-5';
