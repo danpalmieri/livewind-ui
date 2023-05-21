@@ -45,7 +45,7 @@
             @if ($name) name="{{ $name }}" @endif
             @if ($type) type="{{ $type }}" @endif
             {{ $attributes->class([
-                'block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600',
+                'block w-full h-10 transition duration-75 rounded-lg focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600',
                 'border-gray-300' => (! $errorText) && (! $name || ! $errors->has($name)),
                 'border-danger-600 ring-danger-600' => $errorText || ($name && $errors->has($name)),
                 'pl-10' => $icon && ($iconPosition === 'before'),
