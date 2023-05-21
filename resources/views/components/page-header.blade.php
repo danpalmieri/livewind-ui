@@ -44,11 +44,11 @@
         @endisset
     </div>
 
-    {{-- @isset($tabs)
-        <div class="pb-3 border-b border-zinc-200 mb-6 mt-5">
+    @isset($tabs)
+        <div class="__pb-3 __border-b border-zinc-200 my-6">
             {{ $tabs }}
         </div>
-    @endisset --}}
+    @endisset
 
     @if($divider)
         <div class="border-b mb-8 mt-5"></div>
