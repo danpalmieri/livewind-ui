@@ -14,7 +14,7 @@
             @endif
 
             @if ($details)
-                <p class="text-sm text-gray-600">{{ $details }}</p>
+                <p class="text-sm text-zinc-600">{{ $details }}</p>
             @endif
         </div>
     @endif

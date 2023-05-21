@@ -6,14 +6,14 @@
 
 <div {{ $attributes->class(['space-y-1']) }}>
     @if ($label)
-        <p class="text-xs font-medium tracking-wide text-gray-500 uppercase">{{ $label }}</p>
+        <p class="text-xs font-medium tracking-wide text-zinc-500 uppercase">{{ $label }}</p>
     @endif
 
     <div class="flex items-center space-x-1 font-medium">
         @if ($icon)
             <x-dynamic-component :component="$icon" :class="generateClasses([
                 'w-5 h-5',
-                'text-gray-500' => ! $iconColor,
+                'text-zinc-500' => ! $iconColor,
                 'text-danger-500' => $iconColor === 'danger',
                 'text-primary-600' => $iconColor === 'primary',
                 'text-success-500' => $iconColor === 'success',

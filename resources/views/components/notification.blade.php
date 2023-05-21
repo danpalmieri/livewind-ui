@@ -24,14 +24,14 @@
             </p>
 
             @if ($details)
-                <p class="font-medium leading-6 text-gray-500">
+                <p class="font-medium leading-6 text-zinc-500">
                     {{ $details }}
                 </p>
             @endif
         </div>
 
         @if ($description)
-            <p class="text-gray-600">
+            <p class="text-zinc-600">
                 {{ $description }}
             </p>
         @endif

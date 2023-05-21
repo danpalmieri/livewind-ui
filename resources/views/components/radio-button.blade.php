@@ -28,7 +28,7 @@
                 @if ($id) for="{{ $id }}" @endif
                 class="{{ generateClasses([
                         'inline-block text-sm font-medium leading-4',
-                        'text-gray-700' => (! $errorText) && (! $name || ! $errors->has($name)),
+                        'text-zinc-700' => (! $errorText) && (! $name || ! $errors->has($name)),
                         'text-danger-700' => $errorText || ($name && $errors->has($name)),
                 ]) }}"
             >
@@ -41,7 +41,7 @@
         @endif
 
         @if ($helperText)
-            <p class="text-sm text-gray-600">{{ $helperText }}</p>
+            <p class="text-sm text-zinc-600">{{ $helperText }}</p>
         @endif
     </div>
 </div>

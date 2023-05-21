@@ -16,7 +16,7 @@
     ]);
 
     $detailClasses = generateClasses([
-        'ml-auto text-xs text-gray-500',
+        'ml-auto text-xs text-zinc-500',
         'group-hover:text-primary-100 group-focus:text-primary-100' => $color === 'primary',
         'group-hover:text-danger-100 group-focus:text-danger-100' => $color === 'danger',
         'group-hover:text-success-100 group-focus:text-success-100' => $color === 'success',

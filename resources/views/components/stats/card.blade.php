@@ -13,13 +13,13 @@
     'border' => $flat,
 ]) }}>
     <div class="space-y-2">
-        <div class="text-sm font-medium text-gray-500">{{ $label }}</div>
+        <div class="text-sm font-medium text-zinc-500">{{ $label }}</div>
 
         <div class="text-5xl font-light md:text-6xl">{{ $value }}</div>
 
         @if ($description)
             <div class="flex items-center space-x-1 text-sm font-medium {{ [
-                null => 'text-gray-600',
+                null => 'text-zinc-600',
                 'danger' => 'text-danger-600',
                 'primary' => 'text-primary-600',
                 'success' => 'text-success-600',

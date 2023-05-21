@@ -15,7 +15,7 @@
 
     <div class="-my-2 space-y-1">
         <div class="{{ generateClasses([
-            'grid gap-4 text-sm font-medium text-gray-500 pb-2',
+            'grid gap-4 text-sm font-medium text-zinc-500 pb-2',
             'grid-cols-2' => count($columns) === 1,
             'grid-cols-3' => count($columns) === 2,
             'grid-cols-4' => count($columns) === 3,

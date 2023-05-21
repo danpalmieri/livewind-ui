@@ -19,7 +19,7 @@
             @if ($id) for="{{ $id }}" @endif
             class="{{ generateClasses([
                 'inline-block text-sm font-medium leading-4',
-                'text-gray-700' => (! $errorText) && (! $name || ! $errors->has($name)),
+                'text-zinc-700' => (! $errorText) && (! $name || ! $errors->has($name)),
                 'text-danger-700' => $errorText || ($name && $errors->has($name)),
             ]) }}"
         >
@@ -42,7 +42,7 @@
 
         <span class="{{ generateClasses([
             'absolute inset-y-0 right-0 flex items-center justify-center w-10 h-10 transition pointer-events-none group-focus-within:text-primary-600',
-            'text-gray-400' => (! $errorText) && (! $name || ! $errors->has($name)),
+            'text-zinc-400' => (! $errorText) && (! $name || ! $errors->has($name)),
             'text-danger-400' => $errorText || ($name && $errors->has($name)),
         ]) }}">
             @unless ($icon)
@@ -60,6 +60,6 @@
     @endif
 
     @if ($helperText)
-        <p class="text-sm text-gray-600">{{ $helperText }}</p>
+        <p class="text-sm text-zinc-600">{{ $helperText }}</p>
     @endif
 </div>

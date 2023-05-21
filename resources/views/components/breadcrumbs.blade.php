@@ -1,3 +1,3 @@
-<ol {{ $attributes->class(['flex items-center text-sm font-medium text-gray-600']) }}>
+<ol {{ $attributes->class(['flex items-center text-sm font-medium text-zinc-600']) }}>
     {{ $slot }}
 </ol>

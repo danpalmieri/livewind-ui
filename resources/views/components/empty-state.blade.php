@@ -46,7 +46,7 @@
         <h2 class="text-xl font-semibold tracking-tight">{{ $heading }}</h2>
 
         @if ($description)
-            <p class="text-sm font-medium text-gray-500">
+            <p class="text-sm font-medium text-zinc-500">
                 {{ $description }}
             </p>
         @endif

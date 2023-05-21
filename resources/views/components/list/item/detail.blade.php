@@ -5,7 +5,7 @@
 
 <div {{ $attributes->class([
     'flex items-center space-x-1 font-medium',
-    'text-sm text-gray-500' => ! $variant,
+    'text-sm text-zinc-500' => ! $variant,
     'text-sm' => $variant === 'secondary',
 ]) }}>
     @if ($icon)

@@ -29,7 +29,7 @@
                     {{ $start }}
                 </div>
 
-                <ul class="items-center hidden space-x-2 text-sm font-medium text-gray-600 md:flex">
+                <ul class="items-center hidden space-x-2 text-sm font-medium text-zinc-600 md:flex">
                     {{ $desktopMenu }}
                 </ul>
 
@@ -62,7 +62,7 @@
             >
                 <x-lui::hr />
 
-                <ul class="flex flex-col py-2 space-y-1 text-sm font-medium text-gray-600">
+                <ul class="flex flex-col py-2 space-y-1 text-sm font-medium text-zinc-600">
                     {{ $mobileMenu }}
                 </ul>
             </div>

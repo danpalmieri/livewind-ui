@@ -13,7 +13,7 @@
         'bg-white' => ! $flat,
         'border-gray-300' => $flat,
     ]) }}">
-        <ol class="flex items-center text-sm text-gray-500 divide-x divide-gray-300">
+        <ol class="flex items-center text-sm text-zinc-500 divide-x divide-gray-300">
             {{ $slot }}
         </ol>
     </nav>

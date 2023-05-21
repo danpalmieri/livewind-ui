@@ -19,7 +19,7 @@
 
     $labelClasses = generateClasses([
         'text-xs font-medium',
-        'text-gray-500' => (! $active) && (! $completed),
+        'text-zinc-500' => (! $active) && (! $completed),
         'text-primary-200' => (! $active) && $completed,
     ]);
 

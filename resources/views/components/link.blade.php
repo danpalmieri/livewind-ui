@@ -9,7 +9,7 @@
         'transition focus:outline-none focus:underline',
         'text-primary-600 hover:text-primary-600' => $color === 'primary',
         'text-danger-600 hover:text-danger-500' => $color === 'danger',
-        'text-gray-600 hover:text-gray-500' => $color === 'secondary',
+        'text-zinc-600 hover:text-zinc-500' => $color === 'secondary',
         'text-success-600 hover:text-success-500' => $color === 'success',
         'text-warning-600 hover:text-warning-500' => $color === 'warning',
     ]);

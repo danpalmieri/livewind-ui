@@ -23,7 +23,7 @@
 
             <div>
                 <div class="flex items-center space-x-5">
-                    <h2 class="font-semibold text-2xl text-gray-800 leading-tight">{{ $title }}</h2>
+                    <h2 class="font-semibold text-2xl text-zinc-800 leading-tight">{{ $title }}</h2>
 
                     @isset($titleBadge)
                         <span class="mt-1 text-base font-light uppercase tracking-wider">{{ $titleBadge }}</span>

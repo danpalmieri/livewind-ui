@@ -36,7 +36,7 @@
                                 $subheadingTag = $subheading->attributes->get('tag', 'h2');
                             @endphp
 
-                            <{{ $subheadingTag }} class="text-gray-500">
+                            <{{ $subheadingTag }} class="text-zinc-500">
                                 {{ $subheading }}
                             </{{ $subheadingTag }}>
                         @endif

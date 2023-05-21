@@ -12,7 +12,7 @@
                 'flex-shrink-0 w-5 h-5',
                 'text-primary-600' => $color === 'primary',
                 'text-danger-500' => $color === 'danger',
-                'text-gray-500' => $color === 'secondary',
+                'text-zinc-500' => $color === 'secondary',
                 'text-success-500' => $color === 'success',
                 'text-warning-500' => $color === 'warning',
             ])" />
@@ -26,7 +26,7 @@
             @endif
 
             @if ($slot->isNotEmpty())
-                <p class="text-gray-600">
+                <p class="text-zinc-600">
                     {{ $slot }}
                 </p>
             @endif

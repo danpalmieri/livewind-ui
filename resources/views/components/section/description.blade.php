@@ -1,3 +1,3 @@
-<p {{ $attributes->class(['text-gray-500']) }}>
+<p {{ $attributes->class(['text-zinc-500']) }}>
     {{ $slot }}
 </p>

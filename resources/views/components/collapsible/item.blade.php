@@ -31,7 +31,7 @@
 
         <svg
             x-bind:class="{
-                'rotate-0 text-gray-400': ! open,
+                'rotate-0 text-zinc-400': ! open,
                 'rotate-180 text-primary-600': open,
             }"
             class="flex-shrink-0 -mr-2 transition w-5 h-5"
@@ -44,7 +44,7 @@
     </button>
 
     <div x-show="open" class="px-4 py-2">
-        <p class="text-gray-600">
+        <p class="text-zinc-600">
             {{ $slot }}
         </p>
     </div>
