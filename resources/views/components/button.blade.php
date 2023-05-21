@@ -20,7 +20,7 @@
         'text-white focus:ring-white' => $color !== 'secondary' && $color !== 'tertiary',
         'bg-danger-600 hover:bg-danger-500 focus:bg-danger-700 focus:ring-offset-danger-700' => $color === 'danger',
         'text-black bg-white border border-black/40 hover:bg-zinc-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'secondary',
-        'text-black bg-zinc-100 hover:bg-zinc-200/80 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'tertiary',
+        'text-black bg-zinc-100 hover:bg-zinc-200/80 border border-white focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'tertiary',
         'bg-success-600 hover:bg-success-500 focus:bg-success-700 focus:ring-offset-success-700' => $color === 'success',
         'bg-warning-600 hover:bg-warning-500 focus:bg-warning-700 focus:ring-offset-warning-700' => $color === 'warning',
         'h-8 px-3 text-sm' => $size === 'sm',
