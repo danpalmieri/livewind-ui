@@ -16,8 +16,7 @@
             <x-dynamic-component :component="$icon" {{ $attributes->class([
                 'w-[1.15rem] h-[1.15rem]',
                 'text-primary-800' => $backgroundColor === 'light' && $active,
-                'text-white' => $backgroundColor === 'dark' && $active,
-                'text-primary-600' => $backgroundColor === 'light' && ! $active,
+                'text-primary-600' => $active,
                 'text-white/90' => $backgroundColor === 'dark' && ! $active,
             ]) }} />
         @endif
