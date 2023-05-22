@@ -8,7 +8,7 @@
     <a {{ $attributes->class([
         'flex transition items-center focus:outline-none h-10 px-4 space-x-5 rounded',
         'text-white/90 hover:bg-white/10' => $backgroundColor === 'dark' && ! $active,
-        'text-primary-500 font-bold focus:bg-primary-500/80 focus:text-primary-500' => $backgroundColor === 'dark' && $active,
+        'text-primary-500 font-bold focus:bg-primary-500/80 bg-white focus:text-primary-500' => $backgroundColor === 'dark' && $active,
         'hover:bg-gray-500/5' => $backgroundColor === 'light' && ! $active,
         'hover:bg-gray-500/5 font-bold focus:bg-primary-500/10 focus:text-primary-600 ' => $backgroundColor === 'light' && $active,
     ]) }}>
