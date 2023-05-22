@@ -26,8 +26,8 @@
 
         @if($active)
             <div class="flex-1 flex justify-end">
-                <x-icon name="bi-arrow-left-circle-fill animate-pulse" {{ $attributes->class([
-                    'rounded-full w-2 h-2',
+                <x-icon name="bi-arrow-left-circle-fill" {{ $attributes->class([
+                    'rounded-full w-2.5 h-2.5 animate-pulse',
                     'text-primary-800 bg-primary-800' => $backgroundColor === 'light',
                     'text-primary-600 bg-primary-600' => $backgroundColor === 'dark',
                 ]) }} />
