@@ -4,7 +4,7 @@
      x-on:force-switch-update-{{ $id }}.window="on = $wire.get('{{ $attributes->get('model') }}')"
      x-init="$watch('on', value => $wire.set('{{ $attributes->get('model') }}', value))"
 >
-    <div class="flex justify-between space-x-2">
+    <div class="flex justify-between space-x-3">
         <button
             wire:ignore
             @unless($disabled) x-on:click="on = !on" @endunless
