@@ -22,10 +22,10 @@
     'inline-flex items-center justify-center font-semibold tracking-tight rounded-full',
     'text-zinc-600 bg-zinc-100' => (! $color) || ($color === 'secondary'),
     'h-6 px-2 text-sm' => $size === 'md',
-    'text-danger-700 bg-danger-500/10' => $color === 'danger',
-    'text-primary-700 bg-primary-500/10' => $color === 'primary',
-    'text-success-700 bg-success-500/10' => $color === 'success',
-    'text-warning-700 bg-warning-500/10' => $color === 'warning',
+    'text-danger-600 bg-danger-500/10' => $color === 'danger',
+    'text-primary-600 bg-primary-500/10' => $color === 'primary',
+    'text-success-600 bg-success-500/10' => $color === 'success',
+    'text-warning-600 bg-warning-500/10' => $color === 'warning',
     'h-7 px-3' => $size === 'lg',
 ]) }}>
     @if ($icon && $iconPosition === 'before')

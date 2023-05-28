@@ -6,7 +6,7 @@
 <div {{ $attributes->class(['overflow-x-auto -mx-4']) }}>
     <div class="inline-block min-w-full px-4">
         <div class="{{ generateClasses([
-            'overflow-hidden bg-white rounded-xl',
+            'overflow-hidden bg-white rounded',
             'shadow' => ! $flat,
             'border' => $flat,
         ]) }}">
