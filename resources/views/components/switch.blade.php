@@ -4,18 +4,7 @@
      x-on:force-switch-update-{{ $id }}.window="on = $wire.get('{{ $attributes->get('model') }}')"
      x-init="$watch('on', value => $wire.set('{{ $attributes->get('model') }}', value))"
 >
-    <div class="flex justify-between space-x-3">
-        @if($title)
-            <div class="flex flex-col flex-grow" id="availability-label">
-                <h2 class="flex items-center space-x-3">
-                    <span class="font-medium text-zinc-900">{{ $title }}</span>
-                    <div class="flex-grow h-px bg-zinc-200"></div>
-                </h2>
-                @if($description)
-                    <p class="max-w-lg mt-1 text-sm text-zinc-500">{{ $description }}</p>
-                @endif
-            </div>
-        @endif
+    <div class="flex justify-between space-x-2">
         <button
             wire:ignore
             @unless($disabled) x-on:click="on = !on" @endunless
@@ -41,6 +30,18 @@
             x-bind:class="{ 'md:translate-x-5 translate-x-8': on }">
             </span>
         </button>
+
+        @if($title)
+            <div class="flex flex-col flex-grow" id="availability-label">
+                <h2 class="flex items-center space-x-3">
+                    <span class="font-medium text-zinc-900">{{ $title }}</span>
+                    <div class="flex-grow h-px bg-zinc-200"></div>
+                </h2>
+                @if($description)
+                    <p class="max-w-lg mt-1 text-sm text-zinc-500">{{ $description }}</p>
+                @endif
+            </div>
+        @endif
     </div>
     {{ $slot ?? '' }}
 </div>
