@@ -6,7 +6,7 @@
 
 @php
     $linkClasses = generateClasses([
-        'transition focus:outline-none focus:underline',
+        'transition focus:outline-none focus:underline underline',
         'text-primary-600 hover:text-primary-600' => $color === 'primary',
         'text-zinc-900 hover:text-zinc-900' => $color === 'dark',
         'text-danger-600 hover:text-danger-500' => $color === 'danger',
