@@ -9,7 +9,8 @@
     'divider' => false,
 ])
 
-<div>
+<header>
+    <div class="mx-auto max-w-7xl px-4 pt-8 pb-1 sm:px-6 lg:px-8">
     @isset($breadcrumbs)
         {{ $breadcrumbs }}
     @endisset
@@ -54,3 +55,4 @@
         <div class="border-b mb-8 mt-5"></div>
     @endif
 </div>
+</header>
