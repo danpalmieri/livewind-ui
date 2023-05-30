@@ -12,7 +12,7 @@
 <div {{ $attributes->class([
     'flex flex-col items-center justify-center p-6 space-y-6 text-center rounded-2xl',
     'bg-white shadow' => ! $flat,
-    'border' => $flat,
+    // 'border' => $flat,
     'max-w-xs' => $width === 'xs',
     'max-w-sm' => $width === 'sm',
     'max-w-md' => $width === 'md',
