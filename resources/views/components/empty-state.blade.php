@@ -61,7 +61,7 @@
     @endif
 
     @if ('footer')
-        <div class="flex mt-4 items-center space-x-4 justify-center">
+        <div class="flex mt-4 items-center space-x-4 justify-center text-sm">
             {{ $footer }}
         </div>
     @endif
