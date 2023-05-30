@@ -26,7 +26,7 @@
     'text-primary-600 bg-primary-500/10' => $color === 'primary',
     'text-success-600 bg-success-500/10' => $color === 'success',
     'text-warning-600 bg-warning-500/10' => $color === 'warning',
-    'h-7 px-3' => $size === 'lg',
+    'h-7 px-3 text-base' => $size === 'lg',
 ]) }}>
     @if ($icon && $iconPosition === 'before')
         <x-dynamic-component :component="$icon" :class="$iconClasses" />
