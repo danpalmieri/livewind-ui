@@ -9,7 +9,7 @@
     'divider' => false,
 ])
 
-<x-slot name="header">
+<div>
     @isset($breadcrumbs)
         {{ $breadcrumbs }}
     @endisset
@@ -53,4 +53,4 @@
     @if($divider)
         <div class="border-b mb-8 mt-5"></div>
     @endif
-</x-slot>
+</div>
