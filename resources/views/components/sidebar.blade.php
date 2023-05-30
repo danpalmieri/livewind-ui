@@ -21,7 +21,7 @@
 
     <nav aria-label="{{ $ariaLabel }}" class="flex flex-col flex-1">
         @if ($header)
-            <div class="flex items-center flex-shrink-0 px-4">
+            <div class="flex items-center flex-shrink-0 px-2">
                 {{ $header }}
             </div>
         @endif
