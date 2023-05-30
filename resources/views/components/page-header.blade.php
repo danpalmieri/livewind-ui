@@ -7,6 +7,7 @@
     'breadcrumbs' => null,
     'tabs' => null,
     'divider' => false,
+    'size' => 'md',
 ])
 
 <div>
@@ -23,7 +24,7 @@
 
             <div>
                 <div class="flex items-center space-x-5">
-                    <h2 class="font-semibold text-4xl leading-tight">{{ $title }}</h2>
+                    <h2 class="font-semibold {{ $size == 'md' ? 'text-4xl' : 'text-2xl' }} leading-tight">{{ $title }}</h2>
 
                     @isset($titleBadge)
                         <x-lui::badge class="mt-1" size="lg">{{ $titleBadge }}</x-lui::badge>
