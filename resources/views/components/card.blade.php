@@ -13,7 +13,7 @@
     $imageAlt ??= $heading;
 @endphp
 
-<div {{ $attributes->class(['p-2 space-y-2 bg-white border rounded-xl']) }}>
+<div {{ $attributes->class(['p-2 space-y-2 bg-white __border rounded-xl']) }}>
     @if ($header)
         <div class="px-3 py-1">
             {{ $header }}
