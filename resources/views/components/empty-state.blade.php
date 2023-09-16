@@ -42,11 +42,11 @@
         </div>
     @endif
 
-    <div class="max-w-xs space-y-1">
-        <h2 class="text-xl font-semibold tracking-tight">{{ $heading }}</h2>
+    <div class="max-w-sm space-y-1">
+        <h2 class="text-2xl font-semibold tracking-tight">{{ $heading }}</h2>
 
         @if ($description)
-            <p class="text-sm font-medium text-zinc-500">
+            <p class="text-base font-medium text-zinc-500">
                 {{ $description }}
             </p>
         @endif
