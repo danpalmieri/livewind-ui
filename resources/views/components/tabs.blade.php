@@ -5,6 +5,7 @@
     $classes = generateClasses([
         'inline-flex items-center justify-center space-x-9',
         'text-lg' => $size === 'lg',
+        'text-base' => $size === 'md',
         'text-sm' => $size === 'sm',
     ]);
 @endphp
