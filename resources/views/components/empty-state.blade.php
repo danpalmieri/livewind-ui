@@ -34,9 +34,9 @@
 
     @if ($icon)
         <div class="{{ generateClasses([
-            'flex items-center justify-center w-16 h-16 text-primary-600 rounded-full',
+            'flex items-center justify-center w-20 h-20 text-primary-600 rounded-full',
             'bg-primary-50' => ! $flat,
-            'bg-white shadow' => $flat,
+            'bg-white' => $flat,
         ]) }}">
             <x-dynamic-component :component="$icon" class="w-8 h-8" />
         </div>
