@@ -20,7 +20,7 @@
         </div>
 
         @isset($actions)
-        <div class="flex items-center justify-end bg-zinc-50 px-4 py-3 text-right sm:px-6">
+        <div class="flex items-center justify-end bg-zinc-100 px-4 py-3 text-right sm:px-6">
             {{ $actions }}
         </div>
         @endisset
