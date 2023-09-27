@@ -18,12 +18,12 @@
             '{{ generateClasses([
                 'text-primary-600',
                 'bg-primary-500/10 ring-2 ring-primary-500 ring-inset' => ! $flat,
-                'bg-white shadow' => $flat,
+                'bg-white' => $flat,
             ]) }}': open,
         }"
         type="button"
         class="{{ generateClasses([
-            'flex items-center justify-between text-left w-full px-4 py-1 text-sm font-semibold transition rounded-lg focus:outline-none',
+            'flex items-center justify-between text-left w-full px-4 py-1 font-medium transition rounded-lg focus:outline-none',
             'focus:ring-2 focus:ring-inset focus:ring-primary-500 focus:bg-white focus:outline-none' => $flat,
         ]) }}"
     >
