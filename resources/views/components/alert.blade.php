@@ -5,7 +5,7 @@
     'icon' => null,
 ])
 
-<div {{ $attributes->class(['bg-white shadow rounded-xl']) }}>
+<div {{ $attributes->class(['bg-white border rounded-xl']) }}>
     <div class="flex px-6 py-4 space-x-4">
         @if ($icon)
             <x-dynamic-component :component="$icon" :class="generateClasses([
@@ -15,6 +15,7 @@
                 'text-zinc-500' => $color === 'secondary',
                 'text-success-500' => $color === 'success',
                 'text-warning-500' => $color === 'warning',
+                'text-info-500' => $color === 'info',
             ])" />
         @endif
 
