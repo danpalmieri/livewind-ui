@@ -1,3 +1,3 @@
 <li {{ $attributes }}>
-    <x-lui::hr class="border-gray-200 ml-11" />
+    <x-lui::hr class="border-gray-200 my-1" />
 </li>

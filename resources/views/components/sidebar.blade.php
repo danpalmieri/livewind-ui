@@ -10,7 +10,7 @@
     'flex h-full border-r',
     'bg-black' => $backgroundColor === 'dark',
     'w-[275px]' => ! $iconMenu,
-    'bg-white' => $backgroundColor === 'light',
+    'bg-gray-100/40' => $backgroundColor === 'light',
     'w-80' => $iconMenu,
 ]) }}>
     @if ($iconMenu)

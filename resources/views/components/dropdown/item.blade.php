@@ -8,7 +8,7 @@
 
 @php
     $buttonClasses = generateClasses([
-        'flex items-center w-full h-8 px-3 text-sm font-medium focus:outline-none hover:text-white focus:text-white group',
+        'flex items-center w-full hover:bg-gray-100 py-1 px-2.5 text-sm font-medium focus:outline-none rounded-lg group',
         'hover:bg-primary-600 focus:bg-primary-700' => $color === 'primary',
         'hover:bg-danger-600 focus:bg-danger-700' => $color === 'danger',
         'hover:bg-success-600 focus:bg-success-700' => $color === 'success',
@@ -24,7 +24,7 @@
     ]);
 
     $iconClasses = generateClasses([
-        'mr-2 -ml-1 group-hover:text-white group-focus:text-white w-5 h-5',
+        'mr-2 -ml-1 w-[15px] h-[15px]',
         'text-primary-600' => $color === 'primary',
         'text-danger-500' => $color === 'danger',
         'text-success-500' => $color === 'success',

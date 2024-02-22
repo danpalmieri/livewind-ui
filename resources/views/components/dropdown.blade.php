@@ -33,7 +33,7 @@
         role="menu"
         tabindex="-1"
         class="{{ generateClasses([
-            'absolute z-10 mt-2 shadow-xl rounded-xl overflow-hidden w-52 focus:outline-none',
+            'absolute z-50 mt-4 shadow-xl rounded overflow-hidden w-[290px] focus:outline-none',
             'top-full' => $position === 'bottom-left',
             'left-0' => str_ends_with($position, 'left'),
             'bottom-full' => str_starts_with($position, 'top'),
@@ -41,7 +41,7 @@
             'top-auto' => $position === 'bottom-right',
         ]) }}"
     >
-        <ul class="py-1 space-y-1 bg-white shadow rounded-xl">
+        <ul class="p-1 bg-white shadow rounded-lg">
             {{ $slot }}
         </ul>
     </div>
