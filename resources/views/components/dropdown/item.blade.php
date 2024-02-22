@@ -1,5 +1,5 @@
 @props([
-    'color' => 'primary',
+    'color' => null,
     'detail' => null,
     'icon' => null,
     'tag' => 'button',
