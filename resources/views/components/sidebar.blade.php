@@ -29,5 +29,11 @@
         <div class="flex-1 divide-y divide-white/20 overflow-y-auto">
             {{ $menu }}
         </div>
+
+        @if($footer)
+        <footer class="divide-y divide-white/20 overflow-y-auto">
+            {{ $footer }}
+        </footer>
+        @endif
     </nav>
 </div>
