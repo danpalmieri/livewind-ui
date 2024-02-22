@@ -8,7 +8,7 @@
 
 @php
     $buttonClasses = generateClasses([
-        'flex items-center justify-center w-10 h-10 transition rounded-full hover:bg-zinc-500/5 focus:outline-none',
+        'flex items-center justify-center w-8 h-8 transition rounded-full hover:bg-zinc-500/5 focus:outline-none',
         'text-primary-600 focus:bg-primary-500/10' => $color === 'primary',
         'text-danger-500 focus:bg-danger-500/10' => $color === 'danger',
         'text-zinc-500 focus:bg-zinc-500/10' => $color === 'secondary',
@@ -17,7 +17,7 @@
         'text-black focus:bg-zinc-500/10' => $color === 'dark',
     ]);
 
-    $iconClasses = 'w-5 h-5';
+    $iconClasses = 'w-4 h-4';
 @endphp
 
 @if ($tag === 'button')

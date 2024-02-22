@@ -35,10 +35,10 @@
         {{ $sidebar }}
     </aside>
 
-    <main x-bind:class="{'{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-[250px]' }}': open}" class="{{ generateClasses([
+    <main x-bind:class="{'{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-[275px]' }}': open}" class="{{ generateClasses([
         'flex-1 min-h-screen w-screen transition duration-300',
         'lg:pl-80' => $open && $iconMenu,
-        'lg:pl-[250px]' => $open && ! $iconMenu
+        'lg:pl-[275px]' => $open && ! $iconMenu
     ]) }}">
         {{ $slot }}
     </main>
