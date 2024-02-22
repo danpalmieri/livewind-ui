@@ -2,6 +2,7 @@
     'iconMenu' => false,
     'sidebar' => null,
     'open' => request()->hasCookie('lui-sidebar-open') ? request()->cookie('lui-sidebar-open') : true,
+    'size' => '275px',
 ])
 
 
@@ -37,10 +38,10 @@
         {{ $sidebar }}
     </aside>
 
-    <main x-bind:class="{'{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-[275px]' }}': open}" class="{{ generateClasses([
+    <main x-bind:class="{'{{ $iconMenu ? 'lg:pl-80' : 'lg:pl-['.$size.']' }}': open}" class="{{ generateClasses([
         'flex-1 min-h-screen w-screen _transition duration-300',
         'lg:pl-80' => $open && $iconMenu,
-        'lg:pl-[275px]' => $open && ! $iconMenu
+        'lg:pl-['.$size.']' => $open && ! $iconMenu
     ]) }}">
         {{ $slot }}
     </main>

@@ -4,12 +4,13 @@
     'header' => null,
     'iconMenu' => null,
     'menu' => null,
+    'size' => '275px',
 ])
 
 <div {{ $attributes->class([
     'flex h-full border-r',
     'bg-black' => $backgroundColor === 'dark',
-    'w-[275px]' => ! $iconMenu,
+    'w-['.$size.']' => ! $iconMenu,
     'bg-gray-50' => $backgroundColor === 'light',
     'w-80' => $iconMenu,
 ]) }}>
