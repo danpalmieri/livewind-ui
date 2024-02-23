@@ -23,6 +23,7 @@
         'text-black bg-zinc-100 hover:bg-zinc-200/80 border border-white focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'tertiary',
         'bg-success-600 hover:bg-success-500 focus:bg-success-700 focus:ring-offset-success-700' => $color === 'success',
         'bg-warning-600 hover:bg-warning-500 focus:bg-warning-700 focus:ring-offset-warning-700' => $color === 'warning',
+        'h-7 px-2 text-[13px]' => $size === 'xs',
         'h-8 px-3 text-sm' => $size === 'sm',
         'h-11 px-6 text-xl' => $size === 'lg',
     ]);
@@ -31,12 +32,14 @@
         'mr-1.5 -ml-1 w-[1.07rem] h-[1.07rem]' => $size === 'md',
         'mr-2 -ml-2 w-5 h-5' => $size === 'lg',
         'mr-1 -ml-0.5 w-4 h-4' => $size === 'sm',
+        'mr-1 -ml-0.5 w-3 h-3' => $size === 'xs',
     ]);
 
     $loadingIconClasses = generateClasses([
         'w-[1.07rem] h-[1.07rem]' => $size === 'md',
         'w-5 h-5' => $size === 'lg',
         'w-4 h-4' => $size === 'sm',
+        'w-4 h-4' => $size === 'xs',
     ]);
 @endphp
 
