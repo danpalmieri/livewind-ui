@@ -9,11 +9,17 @@
     'bg-zinc-100' => $backgroundColor !== 'light',
     'bg-white' => $backgroundColor === 'light',
 ]) }}>
-    <div class="flex items-center">
-        {{ $start }}
-    </div>
+    @unless($start || $end)
+        <div class="flex w-full">
+            {{ $slot }}
+        </div>
+    @else
+        <div class="flex items-center">
+            {{ $start }}
+        </div>
 
-    <div class="flex items-center">
-        {{ $end }}
-    </div>
+        <div class="flex items-center">
+            {{ $end }}
+        </div>
+    @endunless
 </div>
