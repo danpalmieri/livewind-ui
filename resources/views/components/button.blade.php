@@ -14,13 +14,14 @@
 @php
     $buttonClasses = generateClasses([
         'inline-flex font-medium items-center justify-center tracking-tight transition rounded disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
-        'bg-primary-600 hover:bg-primary-500 font-medium focus:bg-primary-700 focus:ring-offset-primary-700' => $color === 'primary',
+        'bg-primary-700 hover:bg-primary-800 font-medium focus:bg-primary-700 focus:ring-offset-primary-700' => $color === 'primary',
         'bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-600 focus:ring-offset-zinc-600' => $color === 'dark',
         'h-9 px-4' => $size === 'md',
         'text-white focus:ring-white' => $color !== 'secondary' && $color !== 'tertiary',
         'bg-danger-600 hover:bg-danger-500 focus:bg-danger-700 focus:ring-offset-danger-700' => $color === 'danger',
         'text-black bg-white border border-black/[0.15] hover:bg-zinc-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'secondary',
         'text-black bg-zinc-100 hover:bg-zinc-200/80 border border-white focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'tertiary',
+        '!text-primary-900/80 bg-primary-200/40 hover:bg-primary-200/60 border border-white focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600' => $color === 'tertiary2',
         'bg-success-600 hover:bg-success-500 focus:bg-success-700 focus:ring-offset-success-700' => $color === 'success',
         'bg-warning-600 hover:bg-warning-500 focus:bg-warning-700 focus:ring-offset-warning-700' => $color === 'warning',
         'h-7 px-2 text-[13px]' => $size === 'xs',
@@ -31,7 +32,7 @@
     $iconClasses = generateClasses([
         'mr-1.5 -ml-1 w-[1.07rem] h-[1.07rem]' => $size === 'md',
         'mr-2 -ml-2 w-5 h-5' => $size === 'lg',
-        'mr-1 -ml-0.5 w-4 h-4' => $size === 'sm',
+        'mr-1.5 -ml-0.5 w-4 h-4' => $size === 'sm',
         'mr-1 -ml-0.5 w-3 h-3' => $size === 'xs',
     ]);
 

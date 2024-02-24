@@ -8,6 +8,7 @@
 @php
     $iconClasses = generateClasses([
         'mr-1' => $iconPosition === 'before',
+        'w-4 h-4' => $size === 'sm',
         'w-5 h-5' => $size === 'md',
         'ml-1' => $iconPosition === 'after',
         'w-6 h-6' => $size === 'lg',
@@ -22,6 +23,7 @@
     'inline-flex items-center justify-center font-semibold tracking-tight rounded-full',
     'text-zinc-600 bg-zinc-100' => (! $color) || ($color === 'secondary'),
     'h-6 px-2 text-sm' => $size === 'md',
+    'h-5 px-1.5 text-xs' => $size === 'sm',
     'text-danger-600 bg-danger-500/10' => $color === 'danger',
     'text-primary-600 bg-primary-500/10' => $color === 'primary',
     'text-success-600 bg-success-500/10' => $color === 'success',
