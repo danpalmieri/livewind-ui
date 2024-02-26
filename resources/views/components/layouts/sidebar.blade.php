@@ -5,7 +5,7 @@
 ])
 
 <div
-    x-data="{ open: {{ $open ? 'true' : 'false' }}}"
+    x-data="{ open: {{ $open }}}"
     x-init="$watch('open', value => Cookies.set('lui-sidebar-open', value))"
     {{ $attributes->class(['flex min-h-full']) }}
 >
