@@ -7,16 +7,16 @@
 
 @php
     $buttonClasses = generateClasses([
-        'flex items-center h-6 items-center border-b-[2px] relative top-[8px] space-x-2 pb-[20px] transition focus:outline-none',
-        'hover:text-primary-600 text-black border-transparent' => ! $active,
-        'text-black font-semibold border-black' => $active,
+        'flex font-medium items-center h-6 items-center border-b relative top-[7px] space-x-2 pb-[20px] transition focus:outline-none',
+        'text-gray-600 border-transparent' => ! $active,
+        'text-gray-900 border-black' => $active,
     ]);
 @endphp
 
 @if ($tag === 'button')
     <button
-        type="{{ $type }}"
-        {{ $attributes->class([$buttonClasses]) }}
+            type="{{ $type }}"
+            {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($icon)
             <x-dynamic-component :component="$icon" class="w-5 h-5 opacity-80" />
