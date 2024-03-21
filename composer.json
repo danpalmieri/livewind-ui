@@ -3,7 +3,7 @@
     "description": "Laravel Blade components for TALL Stack Application kit.",
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0"
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
     },
     "autoload": {
         "files": [
