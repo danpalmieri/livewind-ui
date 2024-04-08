@@ -24,7 +24,7 @@
 
             <div>
                 <div class="flex items-center space-x-5">
-                    <h2 class="font-semibold {{ $size == 'md' ? 'text-3xl' : 'text-2xl' }} leading-tight">{{ $title }}</h2>
+                    <h2 class="font-semibold tracking-tight {{ $size == 'md' ? 'text-2xl' : 'text-xl' }} leading-tight">{{ $title }}</h2>
 
                     @isset($titleBadge)
                         <x-lui::badge class="mt-1 !bg-zinc-200" size="lg">{{ $titleBadge }}</x-lui::badge>
@@ -32,7 +32,7 @@
                 </div>
 
                 @isset($description)
-                    <div class="mt-1 text-lg text-zinc-700">{{ $description }}</div>
+                    <div class="mt-1 text-base tracking-tight text-zinc-700">{{ $description }}</div>
                 @endisset
             </div>
 
