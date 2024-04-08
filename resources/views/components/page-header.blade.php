@@ -16,7 +16,7 @@
     @endisset
 
     <div class="flex items-center justify-between">
-        <div class="page-title flex flex-1 items-center space-x-7 !text-2xl">
+        <div class="page-title flex flex-1 items-center space-x-5 !text-2xl">
 
             @isset($image)
                 <img src="{{ $image }}" alt="{{ $title }}" class="w-20 h-20 rounded">

@@ -20,7 +20,7 @@
 @endphp
 
 <span {{ $attributes->class([
-    'inline-flex items-center justify-center font-semibold tracking-tight rounded-full',
+    'inline-flex items-center justify-center tracking-tight rounded-full',
     'text-zinc-600 bg-zinc-100' => (! $color) || ($color === 'secondary'),
     'h-6 px-2 text-sm' => $size === 'md',
     'h-5 px-1.5 text-xs' => $size === 'sm',
