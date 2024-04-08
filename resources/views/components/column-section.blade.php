@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <x-lui::paper class="mt-5 overflow-hidden relative !p-0 md:col-span-2 md:mt-0">
+    <x-lui::paper class="mt-5 overflow-hidden border relative !p-0 md:col-span-2 md:mt-0">
         <div class="px-4 py-5 sm:p-6">
             {{ $slot }}
         </div>
