@@ -27,7 +27,7 @@
                     <h2 class="font-semibold tracking-tight {{ $size == 'md' ? 'text-2xl' : 'text-xl' }} leading-tight">{{ $title }}</h2>
 
                     @isset($titleBadge)
-                        <x-lui::badge class="mt-1 !bg-zinc-200" size="lg">{{ $titleBadge }}</x-lui::badge>
+                        <x-lui::badge class="mt-1 !bg-zinc-200" size="sm">{{ $titleBadge }}</x-lui::badge>
                     @endisset
                 </div>
 
