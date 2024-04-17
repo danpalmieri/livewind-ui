@@ -33,7 +33,7 @@
         role="menu"
         tabindex="-1"
         class="{{ generateClasses([
-            'absolute z-50 mt-4 shadow-xl rounded overflow-hidden w-[290px] focus:outline-none',
+            'absolute z-50 mt-4 shadow-xl rounded overflow-hidden min-w-[200px] focus:outline-none',
             'top-full' => $position === 'bottom-left',
             'left-0' => str_ends_with($position, 'left'),
             'bottom-full' => str_starts_with($position, 'top'),
