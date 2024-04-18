@@ -26,12 +26,12 @@
             </div>
         @endif
 
-        <div class="flex-1 divide-y divide-white/20 overflow-y-auto">
+        <div class="flex-1 divide-y divide-white/20 overflow-y-auto pb-2">
             {{ $menu }}
         </div>
 
         @if($footer)
-        <footer class="divide-y divide-white/20 overflow-y-auto">
+        <footer class="divide-y divide-white/20">
             {{ $footer }}
         </footer>
         @endif
