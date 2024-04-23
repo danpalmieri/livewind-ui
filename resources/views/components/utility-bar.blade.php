@@ -14,11 +14,11 @@
             {{ $slot }}
         </div>
     @else
-        <div class="flex items-center">
+        <div class="flex items-center space-x-1.5">
             {{ $start }}
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center space-x-1.5">
             {{ $end }}
         </div>
     @endunless

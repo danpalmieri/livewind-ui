@@ -32,8 +32,9 @@
         x-cloak
         role="menu"
         tabindex="-1"
+        style="box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important;"
         class="{{ generateClasses([
-            'absolute z-50 mt-4 shadow-xl rounded overflow-hidden min-w-[200px] focus:outline-none',
+            'absolute z-50 mt-4 rounded overflow-hidden min-w-[200px] focus:outline-none',
             'top-full' => $position === 'bottom-left',
             'left-0' => str_ends_with($position, 'left'),
             'bottom-full' => str_starts_with($position, 'top'),
@@ -41,7 +42,7 @@
             'top-auto' => $position === 'bottom-right',
         ]) }}"
     >
-        <ul class="p-1 bg-white shadow rounded-lg">
+        <ul class="py-1.5 bg-white rounded-lg">
             {{ $slot }}
         </ul>
     </div>
