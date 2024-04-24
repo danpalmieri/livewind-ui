@@ -42,7 +42,7 @@
             'top-auto' => $position === 'bottom-right',
         ]) }}"
     >
-        <ul class="py-1.5 bg-white rounded-lg">
+        <ul class="py-1.5 bg-white rounded-lg text-xs">
             {{ $slot }}
         </ul>
     </div>
