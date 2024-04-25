@@ -13,7 +13,7 @@
 
 @php
     $buttonClasses = generateClasses([
-        'inline-flex font-medium items-center justify-center tracking-tight transition rounded-lg disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
+        'inline-flex font-medium items-center justify-center tracking-tight transition rounded disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset',
         'bg-primary-700 hover:bg-primary-800 font-medium focus:bg-primary-700 focus:ring-offset-primary-700' => $color === 'primary',
         'bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-600 focus:ring-offset-zinc-600' => $color === 'dark',
         'text-white focus:ring-white' => $color !== 'secondary' && $color !== 'tertiary',
