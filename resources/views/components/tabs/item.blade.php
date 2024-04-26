@@ -7,7 +7,7 @@
 
 @php
     $buttonClasses = generateClasses([
-        'flex font-medium items-center h-6 items-center border-b relative top-[7px] space-x-2 pb-[20px] transition focus:outline-none',
+        'flex font-medium items-center h-7 items-center border-b relative top-[7px] space-x-2 pb-[20px] transition focus:outline-none',
         'text-gray-600 border-transparent hover:text-gray-900' => ! $active,
         'text-gray-900 border-black' => $active,
     ]);
@@ -21,13 +21,13 @@
         @if ($icon)
             <x-dynamic-component :component="$icon" class="w-4 h-4 opacity-80" />
         @endif
-        <span>{{ $slot }}</span>
+        <span @if($active) class="border block rounded-lg border-gray-200/70 px-2 py-1" @endif>{{ $slot }}</span>
     </button>
 @elseif ($tag === 'a')
     <a {{ $attributes->class([$buttonClasses]) }}>
         @if ($icon)
             <x-dynamic-component :component="$icon" class="w-4 h-4 opacity-80" />
         @endif
-        <span>{{ $slot }}</span>
+        <span @if($active) class="border block rounded-lg border-gray-200/70 px-2 py-1" @endif>{{ $slot }}</span>
     </a>
 @endif
