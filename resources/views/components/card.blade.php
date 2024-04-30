@@ -15,14 +15,14 @@
 
 <div {{ $attributes->class(['p-2 space-y-2 bg-white __border rounded-xl']) }}>
     @if ($header)
-        <div class="px-3 py-1">
+        <div class="px-3 py-1 text-base">
             {{ $header }}
         </div>
     @endif
 
-    @if ($header && ($actions || $heading || $image || $slot->isNotEmpty() || $subheading))
-        <x-lui::hr />
-    @endif
+    {{--    @if ($header && ($actions || $heading || $image || $slot->isNotEmpty() || $subheading))--}}
+    {{--        <x-lui::hr />--}}
+    {{--    @endif--}}
 
     @if ($actions || $heading || $image || $slot->isNotEmpty() || $subheading)
         <div class="space-y-2">
@@ -31,9 +31,9 @@
                     <div aria-hidden="true" class="absolute inset-0 bg-zinc-200 animate-pulse rounded-lg"></div>
 
                     <img
-                        class="absolute inset-0 object-cover rounded-lg"
-                        src="{{ $image }}"
-                        @if ($imageAlt) alt="{{ $imageAlt }}" @endif
+                            class="absolute inset-0 object-cover rounded-lg"
+                            src="{{ $image }}"
+                            @if ($imageAlt) alt="{{ $imageAlt }}" @endif
                     />
                 </figure>
             @endif
