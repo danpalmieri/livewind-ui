@@ -27,7 +27,7 @@
 ]) }}>
 
     @if ($illustration)
-        <div class="flex items-center justify-center h-[200px]">
+        <div class="flex items-center justify-center h-[150px]">
             <img src="{{ $illustration }}" alt="" class="w-full h-full object-contain" />
         </div>
     @endif
@@ -42,8 +42,8 @@
         </div>
     @endif
 
-    <div class="max-w-sm space-y-1">
-        <h2 class="text-2xl font-semibold tracking-tight">{{ $heading }}</h2>
+    <div class="max-w-sm space-y-2">
+        <h2 class="text-xl font-medium tracking-tight">{{ $heading }}</h2>
 
         @if ($description)
             <p class="text-base font-medium text-zinc-500">
