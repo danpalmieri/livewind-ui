@@ -7,7 +7,7 @@
     'bg-white shadow' => ! $flat,
     'border' => $flat,
 ]) }}>
-    <ul class="-my-2 divide-y">
+    <ul class="-my-2 divide-y divide-gray-200/60">
         {{ $slot }}
     </ul>
 </div>
