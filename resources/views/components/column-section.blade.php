@@ -14,15 +14,15 @@
         </div>
     </div>
 
-    <x-lui::paper class="mt-5 overflow-hidden border border-gray-200/70 relative !p-0 md:col-span-2 md:mt-0">
+    <x-lui::paper class="mt-5 overflow-hidden border border-gray-200/60 relative !p-0 md:col-span-2 md:mt-0">
         <div class="px-4 py-5 sm:p-6">
             {{ $slot }}
         </div>
 
         @isset($actions)
-        <div class="flex items-center justify-end bg-gray-100/70 px-4 py-3 text-right sm:px-6">
-            {{ $actions }}
-        </div>
+            <div class="flex items-center justify-end bg-gray-100/70 px-4 py-3 text-right sm:px-6">
+                {{ $actions }}
+            </div>
         @endisset
     </x-lui::paper>
 </div>
