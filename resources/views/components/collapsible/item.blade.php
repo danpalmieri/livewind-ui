@@ -22,7 +22,7 @@
         }"
             type="button"
             class="{{ generateClasses([
-            'flex items-center justify-between text-left w-full px-4 py-1 font-medium transition rounded-lg focus:outline-none',
+            'flex items-center justify-between text-left w-full px-2 py-1 font-medium transition rounded-lg focus:outline-none',
             ' focus:ring-inset focus:ring-primary-500 focus:bg-white focus:outline-none' => $flat,
         ]) }}"
     >
