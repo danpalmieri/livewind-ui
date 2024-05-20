@@ -21,7 +21,7 @@
 
         <div class="space-y-1">
             @if ($heading)
-                <h2 class="text-lg font-semibold leading-6 tracking-tight">
+                <h2 class="font-medium leading-6 tracking-tight">
                     {{ $heading }}
                 </h2>
             @endif
