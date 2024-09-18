@@ -9,7 +9,7 @@
     $buttonClasses = generateClasses([
         'flex font-medium items-center h-7 items-center border-b relative top-[7px] space-x-2 pb-[20px] transition focus:outline-none',
         'text-gray-600 border-transparent hover:text-gray-900' => ! $active,
-        'text-primary-600 font-semibold border-primary-600' => $active,
+        'text-primary-700 font-semibold border-primary-700' => $active,
     ]);
 @endphp
 
